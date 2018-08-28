@@ -18,6 +18,6 @@ public class Solution {
         denominator = (2 * a);
         x = (-b + Math.sqrt(r)) / denominator;
         y = (-b - Math.sqrt(r)) / denominator;
-        System.out.println(x + " " + y);       
+        System.out.println(x + " " + y);
     }
 }
