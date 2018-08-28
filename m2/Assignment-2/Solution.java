@@ -1,7 +1,9 @@
 import java.util.Scanner;
-
-public class Solution {
-    /**
+/**.
+ * program to find roots of equation
+ */
+public final class Solution {
+    /**.
      * to find roots of equation
      */
     private Solution() {
