@@ -4,9 +4,19 @@ public class Solution {
     /**
      * to find roots of equation
      */
+    private Solution() {
+        /**
+         * this is the private constructor
+         */
+    }
     /*
     Do not modify this main function.
     */
+    /**.
+     * main function to read inputs
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
@@ -14,6 +24,13 @@ public class Solution {
         int c = scan.nextInt();
         equation(a, b, c);
     }
+    /**.
+     * function to calculate roots of equation
+     *
+     * @param      a     { parameter_description }
+     * @param      b     { parameter_description }
+     * @param      c     { parameter_description }
+     */
     public static void equation(final int a, final int b, final int c) {
         double x, y, denominator, r;
         final int p = 4;
