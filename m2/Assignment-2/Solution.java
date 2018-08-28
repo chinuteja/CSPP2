@@ -9,17 +9,15 @@ public class Solution {
         int a = scan.nextInt();
         int b = scan.nextInt();
         int c = scan.nextInt();
-        Equation(a, b, c);
+        equation(a, b, c);
     }
-    public static void Equation(final int a, final int b, final int c)
-    {
+    public static void equation(final int a, final int b, final int c) {
         double x, y, denominator, r;
-        r = ((b * b) - (4 * a * c));
+        final int p = 4;
+        r = ((b * b) - (p * a * c));
         denominator = (2 * a);
         x = (-b + Math.sqrt(r)) / denominator;
         y = (-b - Math.sqrt(r)) / denominator;
-        System.out.println(+x+" "+y);
-                
-        
+        System.out.println(x + " " + y);       
     }
 }
