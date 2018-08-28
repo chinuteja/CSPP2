@@ -15,10 +15,10 @@ public class Solution {
 	{
 		double x,y,denominator,r;
 		r = ((b*b) - (4*a*c));
-		denominator = 2*a;
+		denominator = (2*a);
 		x = (-b + Math.sqrt(r))/denominator;
 		y = (-b - Math.sqrt(r))/denominator;
-		System.out.println("the roots are:" +x+" "+y);
+		System.out.println(+x+" "+y);
 				
         
 	}
