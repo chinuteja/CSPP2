@@ -38,9 +38,8 @@ public final class Solution {
      */
     public static long power(final long base, final long exponent) {
         if (exponent != 0) {
-            return (base * power(base, exponent-1));
-        }
-        else {
+            return (base * power(base, exponent - 1));
+        } else {
             return 1;
         }
 
