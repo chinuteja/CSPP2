@@ -28,7 +28,7 @@ public final class Solution {
         long result = power(base, exponent);
         System.out.println(result);
     }
-    /**
+    /**.
      * method to power of the given number
      *
      * @param      base      The base
@@ -36,9 +36,8 @@ public final class Solution {
      *
      * @return     { description_of_the_return_value }
      */
-    public static long power(final long base, final long exponent){
+    public static long power(final long base, final long exponent) {
         if (exponent != 0) {
-
             return (base * power(base, exponent-1));
         }
         else {
