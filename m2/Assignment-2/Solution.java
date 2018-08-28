@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Solution {
+    /**
+     * to find roots of equation
+     */
     /*
     Do not modify this main function.
     */
