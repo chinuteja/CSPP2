@@ -44,7 +44,7 @@ public final class Solution {
      */
     public static int gcd(final int n1, final int n2) {
         if (n2 != 0) {
-            return gcd(n2, n1 % n2);}
+            return gcd(n2, n1 % n2); }
         else {
             return n1;
         }
