@@ -35,7 +35,7 @@ public final class Solution {
 	Need to write the gcd function and print the output.
 	*/
     /**.
-     * to find gcd of given two numbers
+     * to find gcd of given two numbers.
      *
      * @param      n1    The n 1
      * @param      n2    The n 2
@@ -44,8 +44,8 @@ public final class Solution {
      */
     public static int gcd(final int n1, final int n2) {
         if (n2 != 0) {
-            return gcd(n2, n1 % n2); }
-        else {
+            return gcd(n2, n1 % n2);
+        } else {
             return n1;
         }
     }
