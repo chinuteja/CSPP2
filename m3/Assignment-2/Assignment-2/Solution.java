@@ -39,8 +39,8 @@ private static final int TEN = 10;
                 if (j % TEN == SEVEN) {
                     count++;
                 }
-                j /= TEN;
-                System.out.println(j);
+                j /= TEN;//
+                //System.out.println(j);
             }
         }
         System.out.println(count);
