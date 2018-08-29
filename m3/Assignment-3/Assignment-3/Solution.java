@@ -5,12 +5,9 @@ import java.util.Scanner;
 /**.
  * to find gcd of given two numbers.
  */
-/*
-    Do not modify this main function.
-    */
 public final class Solution {
     /**
-     * function description.
+     * Constructs the object.
      */
     private Solution() {
         /**
