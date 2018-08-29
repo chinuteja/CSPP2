@@ -38,11 +38,12 @@ public class Solution {
      * @return     { description_of_the_return_value }
      */
     public static int gcd(int n1, int n2){
-        if (n2 != 0){
-            return gcd(n2, n2%n1);
+        if (n2 == 0){
+            return n1;
         }
         else{
-            return n1;
+            return gcd(n1, n2%n1);
+            
         
         }
     }
