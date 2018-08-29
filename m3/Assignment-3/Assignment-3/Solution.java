@@ -3,22 +3,22 @@
  */
 import java.util.Scanner;
 /**.
- * to find gcd of given two numbers
+ * to find gcd of given two numbers.
  */
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
 public final class Solution {
     /**
-     * function description
+     * function description.
      */
     private Solution() {
         /**
-         * this is private constructor
+         * this is private constructor.
          */
     }
     /**.
-     * to take inputs from user
+     * to take inputs from user.
      *
      * @param      args  The arguments
      */
@@ -32,8 +32,8 @@ public final class Solution {
         System.out.println(gcd(n1, n2));
     }
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
     /**.
      * to find gcd of given two numbers.
      *
