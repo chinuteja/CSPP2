@@ -6,7 +6,10 @@ import java.util.Scanner;
 /*
 	Do not modify this main function.
 	*/
-public class Solution {
+public final class Solution {
+    /**
+     * function description
+     */
     private Solution() {
         /**
          * this is private constructor
