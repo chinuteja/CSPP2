@@ -4,8 +4,11 @@
 import java.util.Scanner;
 public final class Solution {
 /*
-    Fill this main function to print maximum of given array
+    Fill this main function to print maximum of given array.
     */
+    /**
+     * program to find the largest element in an array.
+     */
     private Solution() {
         /**
          * this is private constructor
@@ -29,7 +32,6 @@ public final class Solution {
             if(arr[j] > arr[j + 1]) {
                 arr[j + 1] = arr[j];
             }
-        
         }
         System.out.println(arr[j]);
     }
