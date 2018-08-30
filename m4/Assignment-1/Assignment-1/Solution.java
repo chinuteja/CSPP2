@@ -2,8 +2,11 @@
  * @author teja
  */
 import java.util.Scanner;
-public final class Solution {
 /**
+ * to find maximum element in an array.
+ */
+public final class Solution {
+/**.
  * to find maximum element in a array
  */
     private Solution() {
