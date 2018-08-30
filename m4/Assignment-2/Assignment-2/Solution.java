@@ -16,10 +16,10 @@ public final class Solution {
          * it is a constructor.
          */
     }
-    /**
+    /**.
      * scanner
      */
-    public static final Scanner scan = new Scanner(System.in);
+    private static final Scanner scan = new Scanner(System.in);
     /**.
      * Reads a matrix.
      *
