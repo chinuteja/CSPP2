@@ -16,6 +16,9 @@ public final class Solution {
          * it is a constructor.
          */
     }
+    /**
+     * scanner
+     */
     public static final Scanner scan = new Scanner(System.in);
     /**.
      * Reads a matrix.
@@ -45,7 +48,7 @@ public final class Solution {
         int[][] arr1 = readMatrix(s1, s2);
         int s3 = scan.nextInt();
         int s4 = scan.nextInt();
-        int[][] arr2 = readMatrix(s3, s4);
+        int[][] arr2 = readMatrix(s3, s4);      
         int[][] arr = new int[s1][s2];
         if (s1 != s3 && s2 != s4) {
             System.out.println("not possible"); }
