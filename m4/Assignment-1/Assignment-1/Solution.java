@@ -3,12 +3,9 @@
  */
 import java.util.Scanner;
 public final class Solution {
-/*
-    Fill this main function to print maximum of given array.
-    */
-    /**
-     * program to find the largest element in an array.
-     */
+/**
+ * to find maximum element in a array
+ */
     private Solution() {
         /**
          * this is private constructor
