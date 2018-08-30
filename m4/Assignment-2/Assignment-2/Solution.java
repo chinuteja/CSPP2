@@ -52,7 +52,7 @@ public final class Solution {
         int[][] arr = new int[s1][s2];
         if (s1 != s3 && s2 != s4) {
             System.out.println("not possible");
-        }else {
+        } else {
             for (int i = 0; i < s1; i++) {
                 for (int j = 0; j < s2; j++) {
                     arr[i][j] = arr1[i][j] + arr2[i][j];
