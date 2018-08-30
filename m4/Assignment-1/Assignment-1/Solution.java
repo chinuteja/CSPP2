@@ -29,10 +29,11 @@ public final class Solution {
             arr[i] = sc.nextInt();
         }
         for (j = 0; j < arr.length - 1; j++) {
-            if(arr[j] > arr[j + 1]) {
+            if (arr[j] > arr[j + 1]) {
                 arr[j + 1] = arr[j];
             }
         }
         System.out.println(arr[j]);
     }
 }
+
