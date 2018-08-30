@@ -6,10 +6,16 @@ import java.util.Scanner;
 /**.
  * Class for solution.
  */
+
 public class Solution {
     /**.
      * { var_description }.
      */
+    private Solution() {
+        /**.
+         * it is a constructor.
+         */
+    }
     public static final Scanner scan = new Scanner(System.in);
     /**.
      * Reads a matrix.
@@ -42,7 +48,8 @@ public class Solution {
         int[][] arr2 = readMatrix(s3, s4);
         int[][] arr = new int[s1][s2];
         if (s1 != s3 && s2 != s4) {
-            System.out.println("not possible"); }
+            System.out.println("not possible");
+            }
         else {
             for (int i = 0; i < s1; i++) {
                 for (int j = 0; j < s2; j++) {
