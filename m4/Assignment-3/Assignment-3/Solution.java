@@ -10,9 +10,6 @@ public final class Solution {
 /**.
  * to convert binary to decimal.
  */
- /*
-Do not modify this main function.
-*/
 private Solution() {
 /**.
  * private constructor.
