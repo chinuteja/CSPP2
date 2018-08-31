@@ -4,9 +4,22 @@
 
 import java.util.Scanner;
 public final class Solution {
+    /**.
+     * to convert binary value to decimal.
+     */
  /*
 Do not modify this main function.
 */
+private Solution(){
+    /**.
+     * private constructor.
+     */
+}
+/**
+ * convert binary to decimal.
+ *
+ * @param      args  The arguments
+ */
 public static void main(final String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = Integer.parseInt(sc.nextLine());
@@ -16,6 +29,13 @@ public static void main(final String[] args) {
         System.out.println(res);
         }
     }
+    /**
+     * function to calculate the decimal value.
+     *
+     * @param      s     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public static String binaryToDecimal(final String s) {
         int n, i, sum;
         sum = 0;
