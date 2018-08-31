@@ -19,7 +19,7 @@ public class Solution {/*
     	int n,i,sum;
     	sum = 0;
     	n = s.length()-1;
-    	for (i=0; i<n; i++){
+    	for (i=0; i<=n; i++){
     		sum = sum + Integer.parseInt(s.charAt(i)+"")*((int)Math.pow(2,n));
             n = n-1;
     	}
