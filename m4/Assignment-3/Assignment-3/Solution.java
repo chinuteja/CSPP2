@@ -4,16 +4,16 @@
 
 import java.util.Scanner;
 public final class Solution {
-    /**.
-     * to convert binary value to decimal.
-     */
+/**.
+ * to convert binary to decimal.
+ */
  /*
 Do not modify this main function.
 */
 private Solution() {
-    /**.
-     * private constructor.
-     */
+/**.
+ * private constructor.
+ */
 }
 /**
  * convert binary to decimal.
