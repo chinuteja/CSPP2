@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**.
  * program to reverse a string.
  */
-public class Solution
-{/*
+public class Solution {
+/*
     Do not modify the main function 
     */
-    private Solution(){
+private Solution() {
         /**
          * this is a private constructor
          */
@@ -19,7 +19,7 @@ public class Solution
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args){
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         String reverse = reverseString(s);    
