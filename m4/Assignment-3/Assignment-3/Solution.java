@@ -41,7 +41,8 @@ public static void main(final String[] args) {
         sum = 0;
         n = s.length() - 1;
         for (i = 0; i < s.length(); i++) {
-            sum = sum + Integer.parseInt(s.charAt(i) + "") * ((int) Math.pow(2, n));
+            sum = sum + Integer.parseInt(s.charAt(i) + "") 
+                * ((int) Math.pow(2, n));
             n = n - 1;
         }
         return (sum + "");
