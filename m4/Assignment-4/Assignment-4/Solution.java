@@ -9,6 +9,9 @@ public final class Solution {
 /*
 Do not modify the main function 
 */
+/**
+ * to reverse a given string.
+ */
 private Solution() {
         /**
          * this is a private constructor
@@ -19,11 +22,11 @@ private Solution() {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        String reverse = reverseString(s); 
-        System.out.println(reverse);
+public static void main(final String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String s = sc.nextLine();
+    String reverse = reverseString(s); 
+    System.out.println(reverse);
     }
     /**.
      * to reverse the given string.
