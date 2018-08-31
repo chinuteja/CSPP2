@@ -3,6 +3,9 @@
  */
 
 import java.util.Scanner;
+/**
+ * to convert binary to decimal.
+ */
 public final class Solution {
 /**.
  * to convert binary to decimal.
