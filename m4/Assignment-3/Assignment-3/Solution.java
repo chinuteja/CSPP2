@@ -10,7 +10,7 @@ public final class Solution {
  /*
 Do not modify this main function.
 */
-private Solution(){
+private Solution() {
     /**.
      * private constructor.
      */
