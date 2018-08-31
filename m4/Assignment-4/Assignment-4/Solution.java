@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public final class Solution {
 /*
-Do not modify the main function 
+Do not modify the main function.
 */
 /**
  * to reverse a given string.
@@ -25,7 +25,7 @@ private Solution() {
 public static void main(final String[] args) {
     Scanner sc = new Scanner(System.in);
     String s = sc.nextLine();
-    String reverse = reverseString(s); 
+    String reverse = reverseString(s);
     System.out.println(reverse);
     }
     /**.
