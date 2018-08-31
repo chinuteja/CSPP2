@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**.
  * program to reverse a string.
  */
-public class Solution {
+public final class Solution {
 /*
     Do not modify the main function 
     */
@@ -22,8 +22,8 @@ private Solution() {
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        String reverse = reverseString(s);    
-        System.out.println(reverse);    
+        String reverse = reverseString(s); 
+        System.out.println(reverse);
     }
     /**.
      * to reverse the given string.
@@ -32,9 +32,9 @@ private Solution() {
      *
      * @return     { description_of_the_return_value }
      */
-    public static String reverseString(String s){
+    public static String reverseString(final String s) {
         String s1 = "";
-        for(int i = 0; i < s.length(); i++){
+        for (int i = 0; i < s.length(); i++) {
             s1 = s.charAt(i) + s1;
         }
         return s1;
