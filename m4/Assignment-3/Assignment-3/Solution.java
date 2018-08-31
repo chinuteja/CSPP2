@@ -23,7 +23,7 @@ private Solution() {
 public static void main(final String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = Integer.parseInt(sc.nextLine());
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         String s = sc.nextLine();
         String res = binaryToDecimal(s);
         System.out.println(res);
@@ -41,7 +41,7 @@ public static void main(final String[] args) {
         sum = 0;
         n = s.length() - 1;
         for (i = 0; i < s.length(); i++) {
-            sum = sum + Integer.parseInt(s.charAt(i) + "") 
+            sum = sum + Integer.parseInt(s.charAt(i) + "")
                 * ((int) Math.pow(2, n));
             n = n - 1;
         }
