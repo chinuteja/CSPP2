@@ -26,13 +26,14 @@ final class Solution {
                                 final int columns) {
         final int zero = 0;
         final int fifty = 50;
+        final int onehundred = 100;
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
                 if (a[i][j] > zero && a[i][j] < fifty) {
                     a[i][j] = zero;
                 } else if (a[i][j] >= fifty && a[i][j] < 150) {
-                    a[i][j] = 100;
+                    a[i][j] = onehundred;
                 } else if (a[i][j] >= 150 && a[i][j] < 250) {
                     a[i][j] = 200;
                 } else if (a[i][j] >= 250 && a[i][j] < 350) {
