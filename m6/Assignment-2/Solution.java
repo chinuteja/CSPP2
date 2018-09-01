@@ -41,7 +41,7 @@ final class Solution {
             else if (a[i][j]==350 && a[i][j]<450){
                 a[i][j] = 400;
             }
-            else{
+            else if (a[i][j] == 450 && a[i][j]<=500){
                 a[i][j] =500;
             }
         }
