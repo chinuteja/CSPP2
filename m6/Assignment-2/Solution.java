@@ -25,12 +25,13 @@ final class Solution {
     static int[][] roundHundred(final int[][] a, final int rows,
                                 final int columns) {
         int zero = 0;
+        int fifty = 50;
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < columns; j++) {
-                if (a[i][j] > zero && a[i][j] < 50) {
+                if (a[i][j] > zero && a[i][j] < fifty) {
                     a[i][j] = zero;
-                } else if (a[i][j] >= 50 && a[i][j] < 150) {
+                } else if (a[i][j] >= fifty && a[i][j] < 150) {
                     a[i][j] = 100;
                 } else if (a[i][j] >= 150 && a[i][j] < 250) {
                     a[i][j] = 200;
