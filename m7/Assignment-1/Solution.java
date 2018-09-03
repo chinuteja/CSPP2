@@ -7,6 +7,11 @@ class InputValidator {
      * constructor
      */
     String value;
+    /**
+     * constructor
+     *
+     * @param      input  The input
+     */
     public InputValidator(final String input) {
         this.value = input;
 
