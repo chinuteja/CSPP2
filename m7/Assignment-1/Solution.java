@@ -37,10 +37,11 @@ class InputValidator {
      * Class for solution.
      */
 public class Solution {
+    /**.
+     * Constructs the object.
+     */
     private Solution(){
-        /**.
-         * constructor
-         */
+        
     }
     /**
      * main method to take input.
