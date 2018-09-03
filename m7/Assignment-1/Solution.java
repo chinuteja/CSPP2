@@ -3,6 +3,9 @@ import java.util.Scanner;
  * Input validator class
  */
 class InputValidator {
+    /**.
+     * constructor
+     */
     String value;
     public InputValidator(final String input) {
         this.value = input;
