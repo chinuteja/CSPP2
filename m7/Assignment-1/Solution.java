@@ -29,6 +29,9 @@ class InputValidator {
         return false;
     }
 }
+/**.
+ * to get input.
+ */
 public class Solution {
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
