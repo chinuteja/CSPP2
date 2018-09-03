@@ -16,7 +16,7 @@ class InputValidator {
      *
      * @param      input  The input
      */
-    public InputValidator(final String input) {
+    InputValidator(final String input) {
         this.value = input;
 
     }
@@ -37,6 +37,11 @@ class InputValidator {
      * Class for solution.
      */
 public class Solution {
+    private Solution(){
+        /**.
+         * constructor
+         */
+    }
     /**
      * main method to take input.
      *
