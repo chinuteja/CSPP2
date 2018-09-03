@@ -6,7 +6,11 @@ class InputValidator {
     /**.
      * constructor
      */
-    String value;
+    private final int length = 6;
+    /**.
+     * { var_description }
+     */
+    private static String value;
     /**.
      * constructor
      *
@@ -23,16 +27,21 @@ class InputValidator {
      */
     public boolean validateData() {
 
-        if ((this.value).length() >= 6 ) {
+        if ((this.value).length() >= length) {
             return true;
         }
         return false;
     }
 }
-/**.
- * to get input.
- */
+    /**.
+     * Class for solution.
+     */
 public class Solution {
+    /**
+     * main method to take input.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
