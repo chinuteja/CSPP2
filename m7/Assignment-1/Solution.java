@@ -7,7 +7,7 @@ class InputValidator {
      * constructor
      */
     String value;
-    /**
+    /**.
      * constructor
      *
      * @param      input  The input
@@ -16,6 +16,11 @@ class InputValidator {
         this.value = input;
 
     }
+    /**.
+     * function to check the given condition.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean validateData() {
 
         if ((this.value).length() >= 6 ) {
