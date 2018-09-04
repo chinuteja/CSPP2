@@ -28,7 +28,7 @@ public class List {
      *
     */
     // declare a private int[]
-   /**
+   /**.
     * { var_description }
     */
     private static int[] array;
@@ -56,8 +56,7 @@ public class List {
      */
 
     // declare a private int size
-
-        private int size;
+    private int size;
     // again, don't initialize it here
     // variable initialization should be done in the constructor
 
@@ -69,10 +68,13 @@ public class List {
      * { var_description }.
      *
      */
-    /**
+    /**.
      * { var_description }
      */
     private final int ten = 10;
+    /**
+     * Constructs the object.
+     */
     public List() {
 
         // what are the two variables to be initialized here?
