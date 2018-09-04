@@ -72,8 +72,8 @@ public class List {
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
-        array = new int[10];
-        size = 0;
+        this.array = new int[10];
+        this.size = 0;
 
     }
     
@@ -90,8 +90,8 @@ public class List {
      */
     public void add(int item) {
         //Inserts the specified element at the end of the list.
-        array[size] = item;
-        size ++;
+        array[size()] = item;
+        size = size+1;
 
     }
 
@@ -194,7 +194,7 @@ public class List {
      */
     public boolean contains(int item) {
         // Replace the code below
-        for(int i = 0; i<size;i++){
+        for(int i = size; i>=0;i--){
         	if(array[i] == item){
         		return true;
         	}
@@ -209,7 +209,7 @@ public class List {
      */
     public int indexOf(int item) {
         // Replace the code below
-        for(int i =0;i<size;i++){
+        for(int i =size;i>0;i--){
         	if (array[i] == item){
         		return i;
         	}
