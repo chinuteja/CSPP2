@@ -257,7 +257,7 @@ public class List {
             if (array[i] == item) {
                 return i;
             }
-        } return 0;
+        } return -1;
     }
     /**
      * { function_description }.
