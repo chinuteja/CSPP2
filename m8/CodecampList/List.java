@@ -210,7 +210,7 @@ public class List {
     public int indexOf(int item) {
         for (int i = 0; i < size; i++) {
             if (list[item] == item) {
-                return 0;
+                return i;
             }
         }
         return -1;
