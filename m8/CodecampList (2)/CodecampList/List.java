@@ -55,7 +55,10 @@ public class List {
      *
      */
 
-    // declare a private int size
+    /**.
+     * { item_description }
+     * declare a private int size
+     */
     private int size;
     // again, don't initialize it here
     // variable initialization should be done in the constructor
