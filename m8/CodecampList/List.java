@@ -28,7 +28,7 @@ public class List {
      *
     */
     // declare a private int[]
-    private int[] array;
+    private static int[] array;
     // don't create the array yet using new
     // that's the job of the List constructor
 
