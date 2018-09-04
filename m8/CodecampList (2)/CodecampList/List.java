@@ -56,6 +56,7 @@ public class List {
      */
 
     // declare a private int size
+
         private int size;
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -67,6 +68,9 @@ public class List {
     /**
      * { var_description }.
      *
+     */
+    /**
+     * { var_description }
      */
     private final int ten = 10;
     public List() {
@@ -153,7 +157,7 @@ public class List {
         // Think about what to do to the size variable.
         int i;
         if (index < size) {
-            for ( i = index; i < size; i++) {
+            for(i = index; i < size; i++) {
                 array[i] = array[i + 1];
             }
             size--;
