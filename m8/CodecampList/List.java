@@ -182,11 +182,12 @@ public class List {
      */
     public String toString() {
         // Replace the code below
+        int i;
         String str = "[";
-        for (int i = 0; i < size - 1; i++) {
+        for ( i = 0; i < size - 1; i++) {
             str += list[i] + ",";
         }
-        return "print the list";
+        return str+list[i]+"]";
     }
 
     /*
