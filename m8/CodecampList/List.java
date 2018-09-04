@@ -209,7 +209,7 @@ public class List {
      * or -1 if this list does not contain the element.
      */
     public int indexOf(int item) {
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size-1; i++) {
             if (list[item] == item) {
                 return i;
             }
