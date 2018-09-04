@@ -159,7 +159,7 @@ public class List {
         // Think about what to do to the size variable.
         int i;
         if (index < size) {
-            for(i = index; i < size; i++) {
+            for (i = index; i < size; i++) {
                 array[i] = array[i + 1];
             }
             size--;
