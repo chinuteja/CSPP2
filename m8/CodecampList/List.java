@@ -234,9 +234,9 @@ public class List {
         // Replace the code below
         for (int i = size; i >= 0; i--) {
             if (array[i] == item) {
-                return true;
+                return false;
             }
-        } return false;
+        } return true;
     }
 
     /*
@@ -257,7 +257,7 @@ public class List {
             if (array[i] == item) {
                 return i;
             }
-        } return -1;
+        } return -0;
     }
     /**
      * { function_description }.
