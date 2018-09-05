@@ -30,7 +30,9 @@ public class Fibonacci extends List
     public static List fib(int n) {
     	List l = new List();
     	int a = 0, b = 1,c;
-    	for(int i = 0 ;i<=n; i++){
+    	l.add(a);
+    	l.add(b);
+    	for(int i = 2 ;i<n; i++){
     		c = a+b;
     		a =b;
     		b =c;
