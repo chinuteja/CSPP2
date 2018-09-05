@@ -28,17 +28,24 @@ public class Fibonacci extends List
      * Look for the hint.txt if some of the testcases fail.
      */
     public static List fib(int n) {
+    	List l = new List();
+    	int a = 0, b = 1,c;
+    	for(int i = 0 ;i<=n; i++){
+    		c = a+b;
+    		a =b;
+    		b =c;
+    		l.add(c);
+    	}
 
         
 
-        return null;
+        return l;
     }
 
 	public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
-        List l = new List();
-        l.toString();
+        
     }
 }
