@@ -163,6 +163,9 @@ public class List {
      * @param      item   The item
      */
     public void add(final int index, final int item) {
+        if (index < 0) {
+            System.out.println("Negative Index Exception");
+        }
         for (int i = size; i >= index; i--) {
             arr[i + 1] = arr[i];
         }
@@ -225,6 +228,8 @@ public class List {
      */
     public String toString() {
         // Replace the code below
+        if (size == 0) 
+            return "[]";
         String str = "[";
         for (int i = 0; i < size - 1; i++) {
             str += arr[i] + ",";
