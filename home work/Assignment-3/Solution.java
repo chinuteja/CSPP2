@@ -172,6 +172,8 @@ public class Solution {
                     System.out.println(
                         listInteger.contains(Integer.parseInt((tokens[1]))));
                     break;
+                default:
+                    break;
                 }
             }
             break;
@@ -226,6 +228,8 @@ public class Solution {
                     System.out.println(
                         listFloat.contains(Float.parseFloat(tokens[1])));
                     break;
+                default:
+                    break;
                 }
             }
             break;
@@ -279,6 +283,8 @@ public class Solution {
                 case "contains":
                     System.out.println(
                         listCharacter.contains(tokens[1].charAt(0)));
+                    break;
+                default:
                     break;
                 }
             }
