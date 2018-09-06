@@ -323,7 +323,7 @@ public class List {
      */
     public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i]){
+            if (item == list[i]) {
                 return i;
             }
         }
@@ -331,8 +331,9 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-     /**
+     /**.
       * { item_description }
+      * @param      items  items
       */
     public void addAll(final int[] items) {
 
@@ -383,7 +384,7 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int count(int item) {
+    public int count(final int item) {
         // write the logic
         int count = 0;
         for (int i = 0; i < size; i++) {
@@ -399,7 +400,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -420,7 +421,8 @@ public class List {
                         l.add(Integer.parseInt(tokens[1]));
                     } else {
                         if (t.length > 1) {
-                            l.add(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
+                            l.add(Integer.parseInt(t[0]), 
+                                Integer.parseInt(t[1]));
                         }
                     }
                 }
@@ -461,6 +463,8 @@ public class List {
                 break;
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+            default :
                 break;
             }
         }
