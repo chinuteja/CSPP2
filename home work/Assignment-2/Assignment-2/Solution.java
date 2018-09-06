@@ -1,7 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
-
-public class Solution {
+/**.
+ * Class for solution.
+ */
+class Solution {
 
 
     public static void main(String[] args) {
@@ -51,6 +53,8 @@ public class Solution {
                 break;
             case "contains":
                 System.out.println(l.contains(tokens[1]));
+                break;
+            default:
                 break;
             }
         }
