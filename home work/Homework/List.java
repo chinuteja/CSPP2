@@ -71,13 +71,13 @@ public class List {
      * Constructs the object.
      */
     public List() {
-        int var = 10;
+        final int a = 10;
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new int[var];
+        list = new int[a];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
