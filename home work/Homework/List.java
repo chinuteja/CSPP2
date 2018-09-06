@@ -218,9 +218,12 @@ public class List {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index >= 0 && index < size) {
-            for (int i = index; i < size - 1; i++) {
-                list[i] = list[i + 1];
+            if (list[index] == 0){
+                System.out.println("Invalid Position Exception");
             }
+                for (int i = index; i < size - 1; i++) {
+                    list[i] = list[i + 1];
+                }
             size--;
         } else {
             System.out.println("Invalid Position Exception");
@@ -327,10 +330,10 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-     /**.
-      * { item_description }
-      * @param      items  items
-      */
+    /**.
+     * { item_description }
+     * @param      items  items
+     */
     public void addAll(final int[] items) {
 
         int res = 0;
@@ -349,12 +352,12 @@ public class List {
     by moving all the elements to the right.
        The method returns void (nothing)
     */
-       /**.
-        * { function_description }
-        *
-        * @param      index  The index
-        * @param      item   The item
-        */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     * @param      item   The item
+     */
     public void add(final int index, final int item) {
         // write the logic
         if (size == list.length) {
@@ -416,7 +419,7 @@ public class List {
                     } else {
                         if (t.length > 1) {
                             l.add(Integer.parseInt(t[0]),
-                                Integer.parseInt(t[1]));
+                                  Integer.parseInt(t[1]));
                         }
                     }
                 }
