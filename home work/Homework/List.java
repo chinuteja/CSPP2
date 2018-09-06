@@ -32,9 +32,10 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-    
     private int[] list;
-
+    /**.
+     * { item_description }
+     */
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -60,6 +61,9 @@ public class List {
     // variable initialization should be done in the constructor
     
     private int size;
+    /**.
+     * { item_description }
+     */
 
     /*
      * The purpose of the constructor is to initialize the
@@ -133,7 +137,7 @@ public class List {
      *
      * @param      item  The item
      */
-    public void add(int item) {
+    public void add(final int item) {
         //Inserts the specified element at the end of the zelist.
         if (size == list.length) {
             resize();
@@ -307,7 +311,14 @@ public class List {
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
-    public int indexOf(int item) {
+    /**.
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int indexOf(final int item) {
         for (int i = 0; i < size; i++) {
             if (item == list[i]){
                 return i;
@@ -317,7 +328,10 @@ public class List {
     }
     /*Inserts all the elements of specified int
      array to the end of list*/
-    public void addAll(int items[]) {
+     /**
+      * { item_description }
+      */
+    public void addAll(final int items[]) {
 
         int res = 0;
         int len = items.length + size;
@@ -336,7 +350,13 @@ public class List {
     by moving all the elements to the right.
        The method returns void (nothing)
     */
-    public void add(int index, int item) {
+       /**.
+        * { function_description }
+        *
+        * @param      index  The index
+        * @param      item   The item
+        */
+    public void add(final int index, final int item) {
         // write the logic
         if (size == list.length) {
             resize();
@@ -353,6 +373,13 @@ public class List {
     }
 
     /* Returns the count of occurances of a given item in the list*/
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int count(int item) {
         // write the logic
         int count = 0;
@@ -364,8 +391,11 @@ public class List {
         return count;
         // return 0;
     }
-
-
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
