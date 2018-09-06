@@ -4,8 +4,6 @@ import java.util.Scanner;
  * Class for solution.
  */
 class Solution {
-
-
     public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
