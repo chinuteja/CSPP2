@@ -72,7 +72,7 @@ public class StringList implements StringListInterface{
      * class variables with some default values.
      */
     public StringList() {
-        final int num = 10;
+        final int num = 20;
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
