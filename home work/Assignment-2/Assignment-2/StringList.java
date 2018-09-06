@@ -192,7 +192,7 @@ public class StringList implements StringListInterface{
             }
             size--;
             //list[size] = null;
-        } else if(index<0) {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
@@ -241,7 +241,7 @@ public class StringList implements StringListInterface{
         for (int i = 0; i < size - 1; i++) {
             str += list[i] + ",";
         }
-        return str + list[size] + "]";
+        return str + list[size - 1] + "]";
        
     }
     
