@@ -55,7 +55,9 @@ class Student {
         return this.name;
     }
 }
-
+/**.
+ * Class for solution.
+ */
 public class Solution {
     /**.
      * { function_description }
@@ -113,6 +115,8 @@ public class Solution {
                     break;
                 case "contains":
                     System.out.println(listString.contains(tokens[1]));
+                    break;
+                default:
                     break;
                 }
             }
