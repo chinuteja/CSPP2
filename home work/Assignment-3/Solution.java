@@ -14,7 +14,7 @@ class Student {
      *
      * @param      name  The name
      */
-    public Student(final String name) { //A constructor used to initialize the
+    Student(final String name) { //A constructor used to initialize the
         //instance
         //variables
         this.name = name;
@@ -58,7 +58,7 @@ class Student {
 /**.
  * Class for solution.
  */
-public class Solution {
+class Solution {
     /**.
      * { function_description }
      *
