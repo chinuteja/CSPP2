@@ -69,13 +69,13 @@ public class List {
 
 
     public List() {
-
+        int var = 10;
         // what are the two variables to be initialized here?
         // think about the private variables described above.
         // What should be the default values?
         // In the case of the list, it should be empty but
         // it should be initialized with an array size like 10
-        list = new int[10];
+        list = new int[var];
 
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -98,11 +98,21 @@ public class List {
      * constructor.
      *
      */
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int[] resize() {
         list = Arrays.copyOf(list, 2 * size);
         return list;
     }
-    public List(int capacity) {
+    /**.
+     * Constructs the object.
+     *
+     * @param      capacity  The capacity
+     */
+    public List(final int capacity) {
         size = 0;
         list = new int[capacity];
     }
@@ -117,6 +127,11 @@ public class List {
      * to the list.
      *
      * The method returns void (nothing)
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
      */
     public void add(int item) {
         //Inserts the specified element at the end of the zelist.
@@ -166,6 +181,11 @@ public class List {
      *
      * The method returns an int. Empty list should return 0.
      */
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return size;
     }
@@ -190,8 +210,12 @@ public class List {
      * array = [1,3,0,0,0,0,0,0,0,0]
      * The method returns void (nothing)
      */
-
-    public void remove(int index) {
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     */
+    public void remove(final int index) {
         // write the logic for remove here.
         // Think about what to do to the size variable.
         if (index >= 0 && index < size) {
@@ -215,7 +239,15 @@ public class List {
      * How do we check if the position is greater than the
      * number of items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    /**.
+     * 
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int get(final int index) {
         if (index < 0 || index >= size) {
             return -1;
         } else {
@@ -243,6 +275,11 @@ public class List {
      * not all the elements of the array.
      *
      */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         if (size == 0)
             return "[]";
@@ -261,7 +298,7 @@ public class List {
      * So, iterate through the list and return true if
      * the item exists and otherwise false
      */
-    public boolean contains(int item) {
+    public boolean contains(final int item) {
         return indexOf(item) == -1;
     }
 
@@ -272,8 +309,9 @@ public class List {
      */
     public int indexOf(int item) {
         for (int i = 0; i < size; i++) {
-            if (item == list[i])
+            if (item == list[i]){
                 return i;
+            }
         }
         return -1;
     }
