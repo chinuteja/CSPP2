@@ -32,10 +32,11 @@ public class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
-    private int[] list;
     /**.
      * { item_description }
      */
+    private int[] list;
+    
     /*
      * What are the other class variables needed for creating a list?
      * How about keeping track of the size of the list?
@@ -59,19 +60,14 @@ public class List {
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
-    
-    private int size;
     /**.
      * { item_description }
      */
-
+    private int size;
     /*
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-
-
-
     public List() {
         int var = 10;
         // what are the two variables to be initialized here?
