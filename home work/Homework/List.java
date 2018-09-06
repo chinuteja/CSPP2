@@ -290,6 +290,7 @@ public class List {
             String line = stdin.nextLine();
             // split the line using space
             String[] tokens = line.split(" ");
+            //System.out.println(tokens);
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                 case "size":
