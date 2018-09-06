@@ -4,7 +4,7 @@ import java.util.Scanner;
 class Student {
     private String name;
 
-    public Student(String name) {//A constructor used to initialize the instance
+    public Student(final String name) {//A constructor used to initialize the instance
         //variables
         this.name = name;
     }
@@ -126,13 +126,16 @@ public class Solution {
                     listInteger.remove(Integer.parseInt(tokens[1]));
                     break;
                 case "indexOf":
-                    System.out.println(listInteger.indexOf(Integer.parseInt((tokens[1]))));
+                    System.out.println(
+                        listInteger.indexOf(Integer.parseInt((tokens[1]))));
                     break;
                 case "get":
-                    System.out.println(listInteger.get(Integer.parseInt(tokens[1])));
+                    System.out.println(
+                        listInteger.get(Integer.parseInt(tokens[1])));
                     break;
                 case "contains":
-                    System.out.println(listInteger.contains(Integer.parseInt((tokens[1]))));
+                    System.out.println(
+                        listInteger.contains(Integer.parseInt((tokens[1]))));
                     break;
                 }
             }
@@ -177,13 +180,16 @@ public class Solution {
                     listFloat.remove(Integer.parseInt(tokens[1]));
                     break;
                 case "indexOf":
-                    System.out.println(listFloat.indexOf(Float.parseFloat(tokens[1])));
+                    System.out.println(
+                        listFloat.indexOf(Float.parseFloat(tokens[1])));
                     break;
                 case "get":
-                    System.out.println(listFloat.get(Integer.parseInt(tokens[1])));
+                    System.out.println(
+                        listFloat.get(Integer.parseInt(tokens[1])));
                     break;
                 case "contains":
-                    System.out.println(listFloat.contains(Float.parseFloat(tokens[1])));
+                    System.out.println(
+                        listFloat.contains(Float.parseFloat(tokens[1])));
                     break;
                 }
             }
@@ -228,13 +234,16 @@ public class Solution {
                     listCharacter.remove(Integer.parseInt(tokens[1]));
                     break;
                 case "indexOf":
-                    System.out.println(listCharacter.indexOf(tokens[1].charAt(0)));
+                    System.out.println(
+                        listCharacter.indexOf(tokens[1].charAt(0)));
                     break;
                 case "get":
-                    System.out.println(listCharacter.get(Integer.parseInt(tokens[1])));
+                    System.out.println(
+                        listCharacter.get(Integer.parseInt(tokens[1])));
                     break;
                 case "contains":
-                    System.out.println(listCharacter.contains(tokens[1].charAt(0)));
+                    System.out.println(
+                        listCharacter.contains(tokens[1].charAt(0)));
                     break;
                 }
             }
