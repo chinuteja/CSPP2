@@ -340,6 +340,8 @@ public class Solution {
                     System.out.println(
                         listDouble.contains(Double.parseDouble(tokens[1])));
                     break;
+                default:
+                    break;
                 }
             }
             break;
@@ -394,6 +396,8 @@ public class Solution {
                 case "contains":
                     System.out.println(
                         listStudent.contains(new Student(tokens[1])));
+                    break;
+                default:
                     break;
                 }
             }
