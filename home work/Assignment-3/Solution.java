@@ -4,11 +4,11 @@ import java.util.Scanner;
 class Student {
     private String name;
 
-    public Student(final String name) {//A constructor used to initialize the instance
+    public Student(final String name) { //A constructor used to initialize the
+        //instance
         //variables
         this.name = name;
     }
-
     public String getName() {//Getter method which returns the value of
         //instance variable
         return this.name;
