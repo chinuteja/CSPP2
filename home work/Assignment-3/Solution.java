@@ -1,6 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 //A Class is implemented for Student details
+/**.
+     * { var_description }
+     */
 class Student {
     /**.
      * { var_description }
@@ -21,7 +24,7 @@ class Student {
      *
      * @return     The name.
      */
-    public String getName() {//Getter method which returns the value of
+    public String getName() { //Getter method which returns the value of
         //instance variable
         return this.name;
     }
@@ -331,8 +334,8 @@ public class Solution {
             }
             break;
 
-        case "O"://This case will be executed for Student type list i.e 
-        //to store List of Student Objects
+        case "O"://This case will be executed for Student type list i.e
+            //to store List of Student Objects
             List<Student> listStudent = new List();
             while (stdin.hasNext()) {
                 // read the line
