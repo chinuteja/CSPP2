@@ -171,9 +171,7 @@ public class List {
      * You know enough of Object Oriented Programming to answer 
      *these questions :-)
      */
-
     // todo create resize method
-
     /*
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
@@ -189,7 +187,6 @@ public class List {
     public int size() {
         return size;
     }
-
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
@@ -227,7 +224,6 @@ public class List {
             System.out.println("Invalid Position Exception");
         }
     }
-
     /*
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
@@ -253,7 +249,6 @@ public class List {
             return list[index];
         }
     }
-
     /*
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
@@ -291,7 +286,6 @@ public class List {
         str = str + list[i] + "]";
         return str;
     }
-
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -348,7 +342,6 @@ public class List {
         }
         size = len;
     }
-
     /*
        Inserts the specified element at the specified index
     by moving all the elements to the right.
@@ -375,7 +368,6 @@ public class List {
             size += 1;
         }
     }
-
     /* Returns the count of occurances of a given item in the list*/
     /**.
      * { function_description }
