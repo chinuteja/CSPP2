@@ -280,7 +280,7 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0){
+        if (size == 0) {
             return "[]";
         }
         String str = "[";
@@ -297,6 +297,13 @@ public class List {
      * the item passed as an argument to the method
      * So, iterate through the list and return true if
      * the item exists and otherwise false
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean contains(final int item) {
         return indexOf(item) == -1;
@@ -327,7 +334,7 @@ public class List {
      /**
       * { item_description }
       */
-    public void addAll(final int items[]) {
+    public void addAll(final int[] items) {
 
         int res = 0;
         int len = items.length + size;
