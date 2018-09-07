@@ -99,6 +99,7 @@ public class List {
     // }
     /**.
      * { var_description }
+     *@param item 
      */
     public void add(final int item) {
         //if (size == list.length)
@@ -253,7 +254,7 @@ public class List {
      * @return     { description_of_the_return_value }
      */
     public int indexOf(final int item) {
-        for (int i = 0 ; i < size ; i++) {
+        for (int i = 0; i < size; i++) {
             if (list[i] == item) {
                 return i;
             }
@@ -338,7 +339,8 @@ public class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean equals(final List newlist) {// sending a list object
+    public boolean equals(final List newlist) {
+    // sending a list object
         // Replace the code below
         return toString().equals(newlist.toString());
     }
@@ -434,7 +436,7 @@ public class List {
                 break;
             case "subList": {
                 if (tokens.length != 2) {
-                    break ;
+                    break;
                 }
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
