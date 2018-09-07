@@ -172,7 +172,8 @@ public class List {
         }
         String str = "[";
         int i = 0;
-        for (i = 0; i < size - 1; i++) { // size -1 bcz last element should not have comma
+        for (i = 0; i < size - 1; i++) { 
+        // size -1 bcz last element should not have comma
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
@@ -184,9 +185,8 @@ public class List {
      * exists and otherwise false
      */
     public boolean contains(final int item) {
-
         for (int i = 0; i < size; i++) {
-            if (list[i] == item){
+            if (list[i] == item) {
                 return true;
             }
         }
@@ -199,7 +199,7 @@ public class List {
      */
     public int indexOf(final int item) {
         for (int i = 0 ; i < size ; i++) {
-            if (list[i] == item){
+            if (list[i] == item) {
                 return i;
             }
         }
@@ -338,26 +338,27 @@ public class List {
                 if (tokens.length == 2) {
                     String[] t2 = tokens[1].split(",");
                     int[] a = new int[t2.length];
-                    for (int i = 0; i < t2.length; i++){
+                    for (int i = 0; i < t2.length; i++) {
                         a[i] = Integer.parseInt(t2[i]);
                     }
                     l.removeAll(a);
                 }
                 break;
             case "subList": {
-                if (tokens.length != 2) break;
+                if (tokens.length != 2){ break;}
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
-                if (object != null)
+                if (object != null){
                     System.out.println(object);
+                }
                 break;
             }
             case "equals":
                 if (tokens.length == 2) {
                     String[] lt = tokens[1].split(",");
                     List l2 = new List();
-                    for (int k = 0; k < lt.length; k++ ) {
+                    for (int k = 0; k < lt.length; k++) {
                         l2.add(Integer.parseInt(lt[k]));
                     }
                     System.out.println(l.equals(l2));
