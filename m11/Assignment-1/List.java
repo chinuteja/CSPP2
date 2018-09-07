@@ -1,7 +1,9 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
-
+/**.
+ * List of .
+ */
 public class List {
     //Implement all the methods mentioned to build a ListADT
 
@@ -26,6 +28,9 @@ public class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
+    /**.
+     * { var_description }
+     */
     private int[] list;
     // declare a private int[]
     // don't create the array yet using new
@@ -50,6 +55,9 @@ public class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
+    /**.
+     * { var_description }
+     */
     private int size;
     // declare a private int size
     // again, don't initialize it here
@@ -59,8 +67,11 @@ public class List {
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
      */
+    /**.
+     * Constructs the object.
+     */
     public List() {
-         final int num = 1000; 
+        final int num = 1000;
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
@@ -86,9 +97,10 @@ public class List {
     //  list = new int[capacity];
     //  size=0;
     // }
+    
     public void add(final int item) {
         //if (size == list.length)
-           // resize();
+        // resize();
         list[size] = item;
         size++;
     }
@@ -100,10 +112,20 @@ public class List {
      * The method returns an int. Empty list should return 0.
      *
      */
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         // replace the code below to implement the size method
         return size;
     }
+    /**.
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private int[] resize() {
         list = Arrays.copyOf(list, 2 * size);
         return list;
@@ -122,6 +144,11 @@ public class List {
      * removed item, to the left So, the new array looks like this. array =
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
      */
     public void remove(final int index) {
         if (index >= 0 && index < size) {
@@ -146,6 +173,13 @@ public class List {
      * exist. How do we check if the position is greater than the number of
      * items in the list? Would size variable be useful?
      */
+    /**.
+     * { function_description }
+     *
+     * @param      index  The index
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int get(final int index) {
         if (index < size && index >= 0) {
             return list[index];
@@ -166,14 +200,19 @@ public class List {
      * Example: [1,2,3,0,0,0,0,0,0,0] toString should only return the items in
      * the list and not all the elements of the array.
      */
+    /**.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         if (size == 0) {
             return "[]";
         }
         String str = "[";
         int i = 0;
-        for (i = 0; i < size - 1; i++) { 
-        // size -1 bcz last element should not have comma
+        for (i = 0; i < size - 1; i++) {
+            // size -1 bcz last element should not have comma
             str = str + list[i] + ",";
         }
         str = str + list[i] + "]";
@@ -183,6 +222,13 @@ public class List {
      * Contains return true if the list has the item passed as an argument to
      * the method So, iterate through the list and return true if the item
      * exists and otherwise false
+     */
+    /**.
+     * { function_description }
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
      */
     public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
@@ -197,6 +243,13 @@ public class List {
      * Returns the index of the first occurrence of the specified element in
      * this list, or -1 if this list does not contain the element.
      */
+    /**.
+     * Searches for the first match.
+     *
+     * @param      item  The item
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int indexOf(final int item) {
         for (int i = 0 ; i < size ; i++) {
             if (list[i] == item) {
@@ -208,9 +261,14 @@ public class List {
     /*
     Inserts all the elements of specified int array to the end of list
     */
+    /**.
+     * Adds all.
+     *
+     * @param      newArray  The new array
+     */
     public void addAll(final int[] newArray) {
         int res = 0;
-        int length = size + newArray.length; 
+        int length = size + newArray.length;
         // for(int i = 0; i<newarray.length;i++)
         // add(newarry[i]); calling add function to add element to list
         for (int i = size; i < length; i++) {
@@ -223,6 +281,11 @@ public class List {
      Removes all of its elements that are contained in the specified int
      array.
     */
+     /**.
+      * Removes all.
+      *
+      * @param      newArray  The new array
+      */
     public void removeAll(final int[] newArray) {
         for (int i = 0; i < newArray.length; i++) {
             int index = indexOf(newArray[i]);
@@ -243,6 +306,14 @@ public class List {
     "Index Out of Bounds Exception" if any of values start and end are negative
     and also if start is greater than end.
     */
+    /**.
+     * { function_description }
+     *
+     * @param      start  The start
+     * @param      end    The end
+     *
+     * @return     { description_of_the_return_value }
+     */
     public List subList(final int start, final int end) {
         List list1 = new List();
         if (start >= end || start < 0 || end < 0 || size == 0) {
@@ -258,6 +329,13 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
+    /**.
+     * { function_description }
+     *
+     * @param      newlist  The newlist
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean equals(final List newlist) {// sending a list object
         // Replace the code below
         return toString().equals(newlist.toString());
@@ -267,11 +345,19 @@ public class List {
     * Think about this case and make the method
     * the simpler.
     */
+    /**.
+     * { function_description }
+     */
     public void clear() {
         //list.clear();
         size = 0;
 
     }
+    /**.
+     * { function_description }
+     *
+     * @param      args  The arguments
+     */
 
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
@@ -345,11 +431,13 @@ public class List {
                 }
                 break;
             case "subList": {
-                if (tokens.length != 2){ break;}
+                if (tokens.length != 2) {
+                    break ;
+                }
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
                                         Integer.parseInt(arrstring3[1]));
-                if (object != null){
+                if (object != null) {
                     System.out.println(object);
                 }
                 break;
