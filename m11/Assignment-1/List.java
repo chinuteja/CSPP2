@@ -98,8 +98,9 @@ public class List {
     //  size=0;
     // }
     /**.
-     * { var_description }
-     *@param item
+     * { function_description }
+     *
+     * @param      item  The item
      */
     public void add(final int item) {
         //if (size == list.length)
