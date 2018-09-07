@@ -60,12 +60,12 @@ public class List {
      * some default values.
      */
     public List() {
-
+         int num = 1000; 
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
         // initialized with an array size like 10
-        list = new int[1000];
+        list = new int[num];
         size = 0;
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
@@ -86,7 +86,7 @@ public class List {
     //  list = new int[capacity];
     //  size=0;
     // }
-    public void add(int item) {
+    public void add(final int item) {
         //if (size == list.length)
            // resize();
         list[size] = item;
@@ -123,7 +123,7 @@ public class List {
      * [1,3,0,0,0,0,0,0,0,0] The method returns void (nothing)
      *
      */
-    public void remove(int index) {
+    public void remove(final int index) {
         if (index >= 0 && index < size) {
             for (int i = index; i < size - 1; i++) {
                 list[i] = list[i + 1];
@@ -146,7 +146,7 @@ public class List {
      * exist. How do we check if the position is greater than the number of
      * items in the list? Would size variable be useful?
      */
-    public int get(int index) {
+    public int get(final int index) {
         if (index < size && index >= 0) {
             return list[index];
         }
@@ -167,8 +167,9 @@ public class List {
      * the list and not all the elements of the array.
      */
     public String toString() {
-        if (size == 0)
+        if (size == 0){
             return "[]";
+        }
         String str = "[";
         int i = 0;
         for (i = 0; i < size - 1; i++) { // size -1 bcz last element should not have comma
@@ -185,8 +186,9 @@ public class List {
     public boolean contains(final int item) {
 
         for (int i = 0; i < size; i++) {
-            if (list[i] == item)
+            if (list[i] == item){
                 return true;
+            }
         }
 
         return false;
@@ -196,19 +198,21 @@ public class List {
      * this list, or -1 if this list does not contain the element.
      */
     public int indexOf(final int item) {
-        for (int i = 0 ; i < size; i++) {
-            if (list[i] == item)
+        for (int i = 0 ; i < size ; i++) {
+            if (list[i] == item){
                 return i;
+            }
         }
         return -1;
     }
     /*
     Inserts all the elements of specified int array to the end of list
     */
-    public void addAll(int[] newArray) {
+    public void addAll(final int[] newArray) {
         int res = 0;
-        int length = size + newArray.length; // for(int i = 0; i<newarray.length;i++)
-        // add(newarry[i]); calling add function to add element to list .
+        int length = size + newArray.length; 
+        // for(int i = 0; i<newarray.length;i++)
+        // add(newarry[i]); calling add function to add element to list
         for (int i = size; i < length; i++) {
             list[i] = newArray[res];
             res++;
@@ -219,7 +223,7 @@ public class List {
      Removes all of its elements that are contained in the specified int
      array.
     */
-    public void removeAll(int[] newArray) {
+    public void removeAll(final int[] newArray) {
         for (int i = 0; i < newArray.length; i++) {
             int index = indexOf(newArray[i]);
             while (index != -1) {
@@ -254,7 +258,7 @@ public class List {
     Returns a boolean indicating whether the parameter i.e a List object is
     exactly matching with the given list or not.
     */
-    public boolean equals(List newlist ) {// sending a list object
+    public boolean equals(final List newlist) {// sending a list object
         // Replace the code below
         return toString().equals(newlist.toString());
     }
@@ -269,7 +273,7 @@ public class List {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -334,8 +338,9 @@ public class List {
                 if (tokens.length == 2) {
                     String[] t2 = tokens[1].split(",");
                     int[] a = new int[t2.length];
-                    for (int i = 0; i < t2.length; i++)
+                    for (int i = 0; i < t2.length; i++){
                         a[i] = Integer.parseInt(t2[i]);
+                    }
                     l.removeAll(a);
                 }
                 break;
