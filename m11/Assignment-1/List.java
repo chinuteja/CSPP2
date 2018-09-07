@@ -97,7 +97,9 @@ public class List {
     //  list = new int[capacity];
     //  size=0;
     // }
-    
+    /**.
+     * { var_description }
+     */
     public void add(final int item) {
         //if (size == list.length)
         // resize();
