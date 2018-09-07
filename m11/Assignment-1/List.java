@@ -239,7 +239,7 @@ public class List {
 	"Index Out of Bounds Exception" if any of values start and end are negative
 	and also if start is greater than end.
 	*/
-	public List subList(int start, int end) {
+	public List subList(final int start, final int end) {
 		List list1 = new List();
 		if(start >=end || start<0 || end<0|| size == 0){
 			System.out.println("Index Out Of Bounds Exception");
@@ -248,7 +248,7 @@ public class List {
 		for(int i = start; i<end;i++){
 			list1.add(list[i]);
 		}
-		return new List();
+		return list1;
 	}
 	/*
 	Returns a boolean indicating whether the parameter i.e a List object is
