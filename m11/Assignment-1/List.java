@@ -221,12 +221,13 @@ public class List {
 	 array.
 	*/
 	public void removeAll(int[] newArray) {
-		for(int i =0; i < newArray.length; i++){
-		   int index = indexOf(newArray[i]);
-		   while(index!=-1){
-		   	remove(index);
-			index = (indexOf(newArray[i]));
-		}}
+		for (int i = 0; i < newArray.length; i++) {
+			int index = indexOf(newArray[i]);
+			while (index != -1) {
+				remove(index);
+				index = (indexOf(newArray[i]));
+			}
+		}
 	}
 
 
@@ -241,11 +242,11 @@ public class List {
 	*/
 	public List subList(final int start, final int end) {
 		List list1 = new List();
-		if(start >=end || start<0 || end<0|| size == 0){
+		if (start >= end || start < 0 || end < 0 || size == 0) {
 			System.out.println("Index Out of Bounds Exception");
 			return null;
 		}
-		for(int i = start; i<end;i++){
+		for (int i = start; i < end; i++) {
 			list1.add(list[i]);
 		}
 		return list1;
