@@ -242,7 +242,7 @@ public class List {
 	public List subList(final int start, final int end) {
 		List list1 = new List();
 		if(start >=end || start<0 || end<0|| size == 0){
-			System.out.println("Index Out Of Bounds Exception");
+			System.out.println("Index Out of Bounds Exception");
 			return null;
 		}
 		for(int i = start; i<end;i++){
