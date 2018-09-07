@@ -60,7 +60,7 @@ public class List {
      * some default values.
      */
     public List() {
-         int num = 1000; 
+         final int num = 1000; 
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
@@ -167,7 +167,7 @@ public class List {
      * the list and not all the elements of the array.
      */
     public String toString() {
-        if (size == 0){
+        if (size == 0) {
             return "[]";
         }
         String str = "[";
