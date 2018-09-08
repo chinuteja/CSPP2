@@ -17,8 +17,19 @@ class Set {
         return size;
     }
     public void add(int item) {
-        set[size] = item;
+        for(int i = 0; i<=size;i++){
+            // System.out.println("add");
+            if(set[i] != item){
+                // System.out.println("check");
+                set[size] = item;
+                // size++;
+                
+            }
+            else {
+                break;            
+        }}
         size++;
+        
     }
     public String toString() {
         if (size == 0) {
