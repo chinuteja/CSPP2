@@ -1,0 +1,118 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+0
+false
+{}
+1
+true
+{1}
+2
+true
+false
+{1, 2}
+5
+true
+false
+{1, 2, 3, 4, 5}
+5
+true
+false
+{1, 2, 3, 4, 5}
+6
+true
+false
+{1, 2, 3, 4, 5, 7}
+
+Your Output: 
+0
+false
+{}
+1
+true
+{1}
+2
+true
+false
+{1,2}
+7
+true
+false
+{1,2,1,2,3,4,5}
+7
+true
+false
+{1,2,1,2,3,4,5}
+18
+true
+false
+{1,2,1,2,3,4,5,1,1,2,3,2,3,4,4,5,5,7}
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+{1, 3, 4}
+{}
+{}
+{1, 4, 3}
+{}
+{1}
+
+Your Output: 
+
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+{1, 3, 4}
+{}
+{}
+{1, 4, 3}
+{}
+{1}
+
+Your Output: 
+
+
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+[[1, 1], [1, 4], [1, 3], [2, 1], [2, 4], [2, 3], [3, 1], [3, 4], [3, 3], [4, 1], [4, 4], [4, 3], [5, 1], [5, 4], [5, 3]]
+null
+null
+[[1, 1], [1, 4], [1, 3], [4, 1], [4, 4], [4, 3], [3, 1], [3, 4], [3, 3]]
+[[1, 6], [1, 7], [1, 8], [2, 6], [2, 7], [2, 8], [3, 6], [3, 7], [3, 8], [4, 6], [4, 7], [4, 8], [5, 6], [5, 7], [5, 8]]
+[[1, 1]]
+
+Your Output: 
+
+
+----------------------------------------
+Result: 0/4 testcases passed.
+Starting audit...
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:10:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:11:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:12:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:12:5: Redundant 'public' modifier. [RedundantModifier]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:13:23: '1000' is a magic number. [MagicNumber]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:16:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:19:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:19:21: Parameter item should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:23:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:35:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:35:21: Parameter items should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:36: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:39:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:39:29: Parameter item should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:40:23: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\msit\CSPP2\CSPP2\m13\Assignment-1\Solution.java:145: Line is longer than 80 characters (found 82). [LineLength]
+Audit done.
+Checkstyle ends with 17 errors.
+
+
+[master 78004cd] "check_style_score -> 0 of 4 passed. style score: 0/1 "
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m13/Assignment-1/new.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
