@@ -17,16 +17,8 @@ class Set {
         return size;
     }
     public void add(int item) {
-        for(int i = 0; i<size;i++){
-        if(set[i] != item){
         set[size] = item;
         size++;
-
-            
-        }
-        else {
-        break;
-    }}
     }
     public String toString() {
         if (size == 0) {
