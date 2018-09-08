@@ -18,12 +18,14 @@ class Set {
     }
     public void add(int item) {
         for(int i = 0; i<size;i++){
-        if(set[i] == item){
-           break; 
-        }
-        else {
+        if(set[i] != item){
         set[size] = item;
         size++;
+
+            
+        }
+        else {
+        break;
     }}
     }
     public String toString() {
