@@ -1,0 +1,196 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2
+[5,-1,0,99]
+[-1,0]
+[0,99]
+Index Out of Bounds Exception
+false
+true
+4
+[5,-1,0,99]
+Invalid Position Exception
+[]
+
+Your Output: 
+2
+[5,-1,0,99]
+[]
+[]
+Index Out of Bounds Exception
+false
+true
+4
+[5,-1,0,99]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at List.remove(List.java:126)
+	at List.main(List.java:314)
+
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+2
+[1,-1]
+Index Out of Bounds Exception
+true
+6
+[1,-1,0,0,0,-1]
+0
+[]
+
+Your Output: 
+2
+[1,-1]
+Index Out of Bounds Exception
+true
+6
+[1,-1,0,0,0,-1]
+0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at List.add(List.java:92)
+	at List.addAll(List.java:204)
+	at List.main(List.java:342)
+
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+Index Out of Bounds Exception
+Index Out of Bounds Exception
+Index Out of Bounds Exception
+0
+[]
+[]
+0
+false
+[1,2,3,4]
+false
+[1,2,3,4,1,2]
+2
+2
+
+Your Output: 
+[]
+[]
+Index Out of Bounds Exception
+0
+[]
+[]
+0
+false
+[1,2,3,4]
+false
+[1,2,3,4,1,2]
+
+----------------------------------------
+Result: 0/3 testcases passed.
+Starting audit...
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:5: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:29:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:53:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:60: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:63:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:64:32: '10' is a magic number. [MagicNumber]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:67: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:68: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:80: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:81: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:82: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:87:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:91:9: Class 'List' looks like designed for extension (can be subclassed), but the method 'add' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'List' final or making the method 'add' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:91:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:98: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:104:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:111: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:112: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:113: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:114: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:116: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:117: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:123:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:135: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:136: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:137: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:138: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:143:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:152: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:157: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:158: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:160: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:163:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:164: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:175: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:179:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:191:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:202:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:203:31: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:207:9: Class 'List' looks like designed for extension (can be subclassed), but the method 'add' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'List' final or making the method 'add' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:207:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:207:57: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:25: '>' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:26: '>' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:36: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:37: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:208:42: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:209:51: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:209:52: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:34: '=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:35: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:41: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:42: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:43: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:48: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:211:52: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:28: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:42: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:43: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:45: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:46: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:47: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:52: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:218:56: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:228:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:228:31: Parameter newArray should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:242: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:245:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:251:58: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:261:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:28: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:30: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:31: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:32: '<' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:37: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:263:41: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:264:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:264:44: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:270:9: Class 'List' looks like designed for extension (can be subclassed), but the method 'equals' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'List' final or making the method 'equals' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:270:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:280:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:284:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:284:33: Parameter args should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:296: Line is longer than 80 characters (found 86). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:302: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:320: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:326: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:332: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:340: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:349: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:354:41: Avoid nested blocks. [AvoidNestedBlocks]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:355: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:357: Line is longer than 80 characters (found 88). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:358: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:359: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\msit\CSPP2\CSPP2\m15\Assignment-1\List.java:367:75: ')' is preceded with whitespace. [ParenPad]
+Audit done.
+Checkstyle ends with 100 errors.
+
+
+[master c1e4743] "check_style_score -> 0 of 3 passed. style score: 0/1 "
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m15/Assignment-1/new.txt
+
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+

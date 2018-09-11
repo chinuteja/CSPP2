@@ -252,7 +252,7 @@ public class List {
 				list1.add(list[i]);
 			}
 			}
-		return new List();
+		return list1;
 	}
 	/*
 	Returns a boolean indicating whether the parameter i.e a List object is
