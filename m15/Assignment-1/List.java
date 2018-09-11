@@ -18,11 +18,9 @@ public class List {
      * Constructs the object.
      */
     public List() {
-        list = new int[10];
+        final int num = 10;
+        list = new int[num];
         size = 0;
-
-        
-
     }
     /**.
      * { function_description }
@@ -39,7 +37,7 @@ public class List {
      * @param      item  The item
      */
     public void add(final int item) {
-        if (size == list.length){
+        if (size == list.length) {
             resize();
         }
         list[size] = item;
@@ -200,8 +198,8 @@ public class List {
      */
     public List subList(final int start, final int end) throws Exception {
         List list1 = new List();
-        if (start < 0 || end < 0 || start > end || 
-            start == end || end - start == 1) {
+        if (start < 0 || end < 0 || start > end 
+            || start == end || end - start == 1) {
             throw new Exception("Index Out of Bounds Exception");
 
         } else {
@@ -321,8 +319,9 @@ public class List {
                     if (tokens.length == 2) {
                         String[] t2 = tokens[1].split(",");
                         int[] a = new int[t2.length];
-                        for (int i = 0; i < t2.length; i++)
+                        for (int i = 0; i < t2.length; i++){
                             a[i] = Integer.parseInt(t2[i]);
+                        }
                         l.removeAll(a);
                     }
                 } catch (Exception e) {
@@ -332,7 +331,7 @@ public class List {
                 break;
             case "subList":
                 try {
-                    if (tokens.length != 2) break;
+                    if (tokens.length != 2) {break;}
                     String[] arrstring3 = tokens[1].split(",");
                     List object = l.subList(Integer.parseInt(arrstring3[0]),
                                             Integer.parseInt(arrstring3[1]));
@@ -349,7 +348,7 @@ public class List {
                 if (tokens.length == 2) {
                     String[] lt = tokens[1].split(",");
                     List l2 = new List();
-                    for (int k = 0; k < lt.length; k++ ) {
+                    for (int k = 0; k < lt.length; k++) {
                         l2.add(Integer.parseInt(lt[k]));
                     }
                     System.out.println(l.equals(l2));
