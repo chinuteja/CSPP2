@@ -91,7 +91,7 @@ public class List {
      * @return     String representation of the object.
      */
     public String toString() {
-        if (size == 0){
+        if (size == 0) {
             return "[]";
         }
         String str = "[";
@@ -175,7 +175,7 @@ public class List {
      *
      * @throws     Exception  { exception_description }
      */
-    public void removeAll(int[] newArray) throws Exception {
+    public void removeAll(final int[] newArray) throws Exception {
         for (int i = 0; i < newArray.length; i++) {
             int index = indexOf(newArray[i]);
             while (index != -1) {
@@ -198,7 +198,7 @@ public class List {
      */
     public List subList(final int start, final int end) throws Exception {
         List list1 = new List();
-        if (start < 0 || end < 0 || start > end 
+        if (start < 0 || end < 0 || start > end
             || start == end || end - start == 1) {
             throw new Exception("Index Out of Bounds Exception");
 
@@ -248,7 +248,7 @@ public class List {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -319,7 +319,7 @@ public class List {
                     if (tokens.length == 2) {
                         String[] t2 = tokens[1].split(",");
                         int[] a = new int[t2.length];
-                        for (int i = 0; i < t2.length; i++){
+                        for (int i = 0; i < t2.length; i++) {
                             a[i] = Integer.parseInt(t2[i]);
                         }
                         l.removeAll(a);
