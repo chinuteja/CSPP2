@@ -123,13 +123,13 @@ public class List {
 	 *
 	 */
 	public void remove(final int index) throws Exception {
-		System.out.println(index);
+		// System.out.println(index);
 		if (index > 0 || index < size) {
 			for (int i = index; i < size; i++) {
 				list[i] = list[i + 1];
 			}
 			size--;
-			System.out.println(toString());
+			// System.out.println(toString());
 		} else {
 			//System.out.println("Invalid Position Exception");
 			throw new Exception("Invalid Position Exception");
