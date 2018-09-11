@@ -394,6 +394,9 @@ public class List {
 			case "clear":
 				l.clear();
 				break;
+			case "count":
+			     l.count(Integer.parseInt(tokens[1]));
+			     break;
 			default:
 				break;
 			}
