@@ -250,7 +250,7 @@ public class List {
 	*/
 	public List subList(final int start, final int end) throws Exception {
 		List list1 = new List();
-		if (start < 0 || end < 0 || start > end) {
+		if (start < 0 || end < 0 || start > end || start == end || end - start == 1) {
 			throw new Exception("Index Out of Bounds Exception");
 			
 		} else {
