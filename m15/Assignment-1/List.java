@@ -89,6 +89,8 @@ public class List {
 		return list;
 	}
 	public void add(final int item) {
+		if(size == list.length)
+			resize();
 		list[size] = item;
 		size++;
 	}
