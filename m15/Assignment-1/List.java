@@ -395,7 +395,7 @@ public class List {
 				l.clear();
 				break;
 			case "count":
-			     l.count(Integer.parseInt(tokens[1]));
+			     System.out.println(l.count(Integer.parseInt(tokens[1])));
 			     break;
 			default:
 				break;
