@@ -283,8 +283,9 @@ class BookYourShow {
      * Shows all.
      */
     void showAll() {
-        for (Show show : showList)
-            System.out.println(show.toString() + "," 
+        for (Show show : showList){
+            System.out.println(show.toString() + ","
                 + Arrays.toString(show.getSeats()).replace(" ", ""));
+        }
     }
 }
