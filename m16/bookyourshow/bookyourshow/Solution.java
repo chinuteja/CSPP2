@@ -193,11 +193,11 @@ class BookYourShow {
     /**.
      * { var_description }
      */
-    ArrayList<Show> showList;
+    private ArrayList<Show> showList;
     /**.
      * { var_description }
      */
-    ArrayList<String> ticketList;
+    private ArrayList<String> ticketList;
     /**.
      * Constructs the object.
      */
