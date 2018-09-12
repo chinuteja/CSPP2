@@ -29,8 +29,7 @@ public final class Solution {
                 for (int j = 0; j < seats.length; j++) {
                     seats[j] = tokens[k++];
                 }
-                bys.addAShow(new Show
-                    (check[1], tokens[1], seats));
+                bys.addAShow(new Show(check[1], tokens[1], seats));
                 break;
 
             case "book":
@@ -153,7 +152,7 @@ class Patron {
      * @param      name    The name
      * @param      mobile  The mobile
      */
-    Patron(final String name,final String mobile) {
+    Patron(final String name, final String mobile) {
         this.name = name;
         this.mobile = mobile;
     }
@@ -189,7 +188,13 @@ class Patron {
  * Class for book your show.
  */
 class BookYourShow {
+    /**.
+     * { var_description }
+     */
     ArrayList<Show> showList;
+    /**.
+     * { var_description }
+     */
     ArrayList<String> ticketList;
     /**.
      * Constructs the object.
@@ -215,7 +220,7 @@ class BookYourShow {
      * @return     A show.
      */
     Show getAShow(final String movie, final String showTime) {
-        for (Show show : showList){
+        for (Show show : showList) {
             if (show.getMovie().equals(movie) 
                 && show.getShowTime().equals(showTime)){
                 return show;
@@ -240,12 +245,14 @@ class BookYourShow {
         }
         boolean flag = false;
         String[] sseats = show.getSeats();
-        for (String seat : seats)
-            for (int i = 0; i < sseats.length; i++)
+        for (String seat : seats){
+            for (int i = 0; i < sseats.length; i++){
                 if (seat.equals(sseats[i])) {
                     show.setSeatNA(i);
                     flag = true;
                 }
+            }
+        }
 
 
         if (flag) {
