@@ -58,15 +58,16 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
+    public static void loadQuestions(final Scanner s, final Quiz quiz, int questionCount) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
         Question object = new Question();
-        // questionCount = 0;
+        questionCount = 0;
         object.read(s);
-       // quiz.add(object);
-        // questionCount++;
+        //quiz.add(object);
+        questionCount++;
+    
         
     }
     
