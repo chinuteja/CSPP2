@@ -65,7 +65,7 @@ public final class Solution {
         Question object = new Question();
         questionCount = 0;
         object.read(s);
-        //quiz.add(object);
+        //quiz.add(getsize());
         questionCount++;
     
         
@@ -113,11 +113,15 @@ class Quiz {
 }
 class Question {
     //String[] ques = new String[10];
+    Question() {
+
+    }
     public String read(final Scanner s) {
         String lines = s.nextLine(); 
         return lines;
 
     }
+
 
 
 }
