@@ -1,10 +1,12 @@
 import java.util.Scanner;
-import java.util.Arrays;
-
 /**
  * Class for question.
  */
 class Question {
+    /**.
+     * { var_description }
+     */
+    private final int ten = 10;
     /**
      * { var_description }.
      */
@@ -33,7 +35,7 @@ class Question {
      * Constructs the object.
      */
     Question() {
-
+        choices = new String[ten];
     }
     /**
      * Constructs the object.
@@ -45,15 +47,21 @@ class Question {
      * @param      penalty1        The penalty 1
      */
     Question(final String question1, final String[] choices1,
-             final int correctAnswer1, final int maxMarks1, final int penalty1) {
-        questiontext = question1;
-        choices = choices1;
-        correctAnswer = correctAnswer1;
-        maxMarks = maxMarks1;
-        penalty = penalty1;
+             final int correctAnswer1, final int maxMarks1,
+             final int penalty1) {
+        this.questiontext = question1;
+        this.choices = choices1;
+        this.correctAnswer = correctAnswer1;
+        this.maxMarks = maxMarks1;
+        this.penalty = penalty1;
     }
-    Question(String response) {
-        this.response = response;
+    /**.
+     * Constructs the object.
+     *
+     * @param      response1  The response 1
+     */
+    Question(final String response1) {
+        this.response = response1;
     }
     /**
      * { function_description }.
@@ -61,24 +69,17 @@ class Question {
      * @param      choice  The choice
      *
      * @return     { description_of_the_return_value }
-13     */
+     */
     public boolean evaluateResponse(final String choice) {
-       
-        if(correctAnswer ==Integer.parseInt(choice)) {
-            return true;
-        }
-
-       
-       return false;
+        return getCorrectAnswer().equals(choice);
     }
     /**
      * Gets the correct answer.
      *
-     *
      * @return     The correct answer.
      */
     public String getCorrectAnswer() {
-        return Integer.toString(correctAnswer);
+        return Integer.toString(this.correctAnswer);
     }
     /**
      * Gets the question text.
@@ -86,7 +87,15 @@ class Question {
      * @return     The question text.
      */
     public String getQuestionText() {
-        return questiontext;
+        return this.questiontext;
+    }
+    /**
+     * Gets the correct response.
+     *
+     * @return     The correct response.
+     */
+    public String getCorrectResponse() {
+        return choices[correctAnswer - 1];
     }
     /**
      * Gets the choice.
@@ -94,9 +103,7 @@ class Question {
      * @return     The choice.
      */
     public String[] getChoice() {
-
-
-        return choices;
+        return this.choices;
     }
     /**
      * Gets the maximum marks.
@@ -104,8 +111,7 @@ class Question {
      * @return     The maximum marks.
      */
     public int getMaxMarks() {
-
-        return maxMarks;
+        return this.maxMarks;
     }
     /**
      * Gets the penalty.
@@ -113,7 +119,7 @@ class Question {
      * @return     The penalty.
      */
     public int getPenalty() {
-        return penalty;
+        return this.penalty;
     }
     /**
      * Sets the response.
@@ -121,8 +127,7 @@ class Question {
      * @param      answer  The answer
      */
     public void setResponse(final String answer) {
-        this.response = answer;
-
+        // this.response = answer.subString(4);
     }
     /**
      * Gets the response.
@@ -130,7 +135,7 @@ class Question {
      * @return     The response.
      */
     public String getResponse() {
-        return response;
+        return this.response;
     }
     /**
      * Returns a string representation of the object.
@@ -139,20 +144,21 @@ class Question {
      */
     public String toString() {
         String s = "";
-        int i = 0;
-        for(i=0;i<choices.length-1;i++) {
-            s = s+choices[i]+"\t";
+        s += getQuestionText() + "(" + getMaxMarks() + ")" + "\n";
+        for (int i = 0; i < getChoice().length - 1; i++) {
+            s += choices[i] + "\t";
         }
-        s = s+choices[i];    
-        
-        return s;
-        }
+        return s + choices[getChoice().length - 1] + "\n";
     }
-
+}
 /**
  * Class for quiz.
  */
 class Quiz {
+    /**.
+     * { var_description }
+     */
+    private final int ten = 10;
     /**
      * { var_description }.
      */
@@ -169,7 +175,8 @@ class Quiz {
      * Constructs the object.
      */
     Quiz() {
-
+        questions = new Question[ten];
+        size = 0;
     }
     /**
      * Adds a question.
@@ -177,8 +184,7 @@ class Quiz {
      * @param      q     The question
      */
     public void addQuestion(final Question q) {
-        questions[size] = q;
-        size++;
+        questions[size++] = q;
     }
     /**
      * Gets the question.
@@ -197,22 +203,59 @@ class Quiz {
      */
     public String showReport() {
         String s = "";
-
         return s;
+    }
+    /**.
+     * { function_description }
+     *
+     * @param      ques  The ques
+     */
+    public void print(final int ques) {
+        for (int i = 0; i < ques; i++) {
+            System.out.println(questions[i].toString());
+        }
     }
 
 }
-/**
+/**.
  * Solution class for code-eval.
  */
 public final class Solution {
-    /**
+    /**.
+     * { var_description }
+     */
+    private static final int THREE = 3;
+    /**.
+     * { var_description }
+     */
+    private static final int FOUR = 4;
+    /**.
+     * { var_description }
+     */
+    private static final int FIVE = 5;
+    /**.
+     * { var_description }
+     */
+    private static int size1 = 0;
+    /**.
+     * { var_description }
+     */
+    private static final int TEN = 10;
+    /**.
+     * { var_description }
+     */
+    private static int responeCount = 0;
+    /**.
+     * { var_description }
+     */
+    private static String[] str = new String[TEN];
+    /**.
     * Constructs the object.
     */
     private Solution() {
         // leave this blank
     }
-    /**
+    /**.
      * main function to execute test cases.
      *
      * @param      args  The arguments
@@ -229,84 +272,83 @@ public final class Solution {
             // split the line using space
             String[] tokens = line.split(" ");
             // based on the list operation invoke the corresponding method
-            switch (tokens[0]) {
-            case "LOAD_QUESTIONS":
-                System.out.println("|----------------|");
-                System.out.println("| Load Questions |");
-                System.out.println("|----------------|");
-                loadQuestions(s, q, Integer.parseInt(tokens[1]));
-                break; 
-            case "START_QUIZ":
-                System.out.println("|------------|");
-                System.out.println("| Start Quiz |");
-                System.out.println("|------------|");
-                startQuiz(s, q, Integer.parseInt(tokens[1]));
-                break;
-            case "SCORE_REPORT":
-                System.out.println("|--------------|");
-                System.out.println("| Score Report |");
-                System.out.println("|--------------|");
-                displayScore(q);
-                break;
-            default:
-                break;
+            try {
+                switch (tokens[0]) {
+                case "LOAD_QUESTIONS":
+                    System.out.println("|----------------|");
+                    System.out.println("| Load Questions |");
+                    System.out.println("|----------------|");
+                    loadQuestions(s, q, Integer.parseInt(tokens[1]));
+                    break;
+                case "START_QUIZ":
+                    System.out.println("|------------|");
+                    System.out.println("| Start Quiz |");
+                    System.out.println("|------------|");
+                    startQuiz(s, q, Integer.parseInt(tokens[1]));
+                    break;
+                case "SCORE_REPORT":
+                    System.out.println("|--------------|");
+                    System.out.println("| Score Report |");
+                    System.out.println("|--------------|");
+                    displayScore(q);
+                    break;
+                default:
+                    break;
+                }
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
     }
-    /**
+    /**.
      * Loads questions.
      *
      * @param      scan       The scan
      * @param      quiz       The quiz
-     * @param      q          The question count
+     * @param      q          The quarter
      *
+     * @throws     Exception  { exception_description }
      */
     public static void loadQuestions(final Scanner scan,
-                                     final Quiz quiz, final int questionscount) {
+                                     final Quiz quiz,
+                                     final int q)throws Exception {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
-        if(questionscount == 0) {
-            System.out.println("Quiz doesnot have questions");
-            return;
+        if (q == 0) {
+            throw new Exception("Quiz does not have questions");
         } else {
-            for(int i =0;i<questionscount;i++) {
-                String line = scan.nextLine();
-                String[] tokens = line.split(":");
-                final int five = 5;
-                final int four = 4;
-                final int three = 3;
-                if(tokens.length!=five || tokens[0].equals("")){
-                    System.out.println("Error! Malformed question");
-                    return;
-                }if (tokens[1].split(",").length < 2) {
-                System.out.println(tokens[0]
-                                   + " does not have enough answer choices");
-                return; } 
-                if (Integer.parseInt(tokens[2]) > four) {
-                System.out.println(
-                    "Error! Correct answer choice number"
-                    + " is out of range for question text 1"
-                );
-                
-                return;
-            }
-                if(Integer.parseInt(tokens[three])<0) {
-                    System.out.println("Invalid max marks for" +tokens[0]);
-                    return;
+            for (int i = 0; i < q; i++) {
+                String questions = scan.nextLine();
+                String[] tokens = questions.split(":");
+                if (tokens.length < FIVE || tokens[0].length() == 0) {
+                    throw new Exception("Error! Malformed question");
+                } else if ((tokens[1].split(",").length < 2) && (
+                               Integer.parseInt(tokens[THREE]) > 0) && (
+                               Integer.parseInt(tokens[FOUR]) < 0)) {
+                    throw new Exception(
+                        "trick question  does not have enough answer choices");
+                } else if (Integer.parseInt(tokens[2]) > FOUR) {
+                    throw new Exception(
+                        "Error! Correct answer choice number is out of"
+                        + " range for question text 1");
+                } else if (Integer.parseInt(tokens[THREE]) < 0) {
+                    throw new Exception(
+                        "Invalid max marks for question about sony");
+                } else if (Integer.parseInt(tokens[FOUR]) > 0) {
+                    throw new Exception(
+                        "Invalid penalty for question about sony");
                 }
-                if(Integer.parseInt(tokens[four])>0) {
-                   System.out.println("Invalid penalty for " +tokens[0]);
-                   break;
-                }
-
-
-
-
+                quiz.addQuestion(new Question(tokens[0], tokens[1].split(","),
+                                              Integer.parseInt(tokens[2]),
+                                              Integer.parseInt(tokens[THREE]),
+                                              Integer.parseInt(tokens[FOUR])));
+                size1++;
             }
+            System.out.println(q + " are added to the quiz");
         }
     }
-    /**
+    /**.
      * Starts a quiz.
      *
      * @param      scan  The scan
@@ -318,14 +360,44 @@ public final class Solution {
         // write your code here to display the quiz questions on the console.
         // read the user responses from the console using scanner object.
         // store the user respone in the question object
-
+        if (size1 == 0) {
+            return;
+        }
+        quiz.print(q);
+        for (int i = 0; i < q; i++) {
+            str[i] = scan.nextLine();
+            responeCount++;
+        }
     }
-    /**
+    /**.
      * Displays the score report.
      *
      * @param      quiz     The quiz object
      */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report using quiz object.
+
+        if (size1 == 0) {
+            return;
+        }
+        int count = 0;
+        for (int i = 0; i < responeCount; i++) {
+            String ans = quiz.getQuestion(i).getCorrectResponse();
+            System.out.println(quiz.getQuestion(i).getQuestionText());
+            String sub = str[i];
+            if (ans.equals(sub)) {
+                System.out.println(
+                    " Correct Answer! - Marks Awarded: "
+                    + quiz.getQuestion(i).getMaxMarks());
+                count += quiz.getQuestion(i).getMaxMarks();
+            } else {
+                System.out.println(
+                    " Wrong Answer! - Penalty: "
+                    + quiz.getQuestion(i).getPenalty());
+                count += quiz.getQuestion(i).getPenalty();
+            }
+        }
+        System.out.print("Total Score: " + count);
+
     }
 }
