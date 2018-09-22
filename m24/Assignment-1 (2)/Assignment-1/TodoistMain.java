@@ -7,6 +7,9 @@ import java.util.Arrays;
 
 /**
  * Class for todoist main.
+*/
+/**
+ * Class for task.
  */
 class  Task {
 	String title;
@@ -15,6 +18,16 @@ class  Task {
 	boolean important;
 	boolean urgent;
 	String status;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      title           The title
+	 * @param      assignedTo      The assigned to
+	 * @param      timeToComplete  The time to complete
+	 * @param      important       The important
+	 * @param      urgent          The urgent
+	 * @param      status          The status
+	 */
 	Task(final String title, final String assignedTo, final int timeToComplete,
 	     final boolean important, final boolean urgent, final String status) {
 		this.title = title;
@@ -29,56 +42,75 @@ class  Task {
 		System.out.print(this.timeToComplete + "," + this.important + ",");
 		System.out.print(this.urgent + "," + this.status);
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	String gettitle() {
 		System.out.println(this.title);
 		return this.title;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	String getassignedTo() {
 		return this.assignedTo;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	int gettimeToComplete() {
 		return this.timeToComplete;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	boolean getimportant() {
 		return this.important;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	boolean geturgent() {
 		return this.urgent;
 	}
+	/**.
+	 * { function_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	String getstatus() {
 		return this.status;
 	}
 }
+/**.
+ * Class for todoist.
+ */
 class Todoist {
 	Task[] t;
-	int tasksize = 0;
+	int size = 0;
 
 	Todoist() {
 		t = new Task[100];
 	}
-	public void  addTask(Task t) {
-		//System.out.println(gettitle()+getstatus());;
-		//return t;
-	}
-	public String toString() {
-		String str = "";
-		return str;
 
-
+	public Task[] addTask(Task item) {
+        t[size] = item;
+        size++;
+        //System.out.println(t);
+        return t;
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
 public class TodoistMain {
 
 	/**
