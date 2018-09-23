@@ -41,59 +41,18 @@ public class Distance {
 			while (scan.hasNext()) {
 				s = scan.nextLine();
 				Pattern p = Pattern.compile(REGEX);
-
+                //System.out.println("Pattern..." +p);
 				// get a matcher object
 				Matcher m = p.matcher(s);
+				//System.out.println("matcher.."+m);
 				s = m.replaceAll(" ").toLowerCase();
+				//System.out.println("String..." +s);
 				String[] words = s.split(" ");
 				StringTokenizer tokens = new StringTokenizer(s);
 				wordCountOne += tokens.countTokens();
-
-				// System.out.println(Arrays.toString(s.split(" ")) + "\n" + Arrays.toString(words));
-				// for (int i = 1; i < words.length; i++) {
-				// 	if (!(words[i].equals(""))) {
-				// 		// if (obj.size() == 0) {
-				// 		// 	obj.add(new Words(words[0], wordsCount));
-				// 		// 	System.out.println(obj.size());
-				// 		// } else if (obj.size() > 0) {
-				// 		// 	// System.out.println("hello");
-
-				// 		// 	if (!((words[i].trim()).equals(""))) {
-				// 		// 		for (int j = 0; j < obj.size(); j++) {
-				// 		// 			if (!((words[i].trim()).equals(obj.get(j).getWord()))) {
-				// 		// 				// System.out.println(words[i].trim() + " " + obj.get(j).getWord() + " " + obj.get(j).getCount());
-				// 		// 				// System.out.println("wod");
-				// 		// 				obj.add(new Words(words[i], wordsCount));
-				// 		// 			} else {
-				// 		// 				// System.out.println("count");;
-				// 		// 				// System.out.println(words[i].trim() + " " + obj.get(j).getWord() + " " + obj.get(j).getCount());
-				// 		// 				obj.get(j).setCount();
-				// 		// 			}
-				// 		// 		}
-				// 		// 	}
-				// 		// }
-				// 		// System.out.println(words[i]);
-				// 		str.add(words[i]);
-				// 		wordsCount++;
-				// 	}
-				// }
 				addWords(words);
 				count++;
 			}
-
-
-
-
-
-
-
-
-			// System.out.println(name);
-			// for (int i = 0; i < obj.size(); i++) {
-			// 	System.out.println(obj.get(i).getWord() + " " + obj.get(i).getCount());
-			// }
-			// distinctWords();
-			// System.out.println(count + "\n" + wordsCount + "\n" + wordCountOne + " " + str.size() + " " + str1.size());
 		} catch (Exception e) {
 			System.out.println(e);
 		}
@@ -124,9 +83,6 @@ public class Distance {
 	public int getNumOfWords() {
 		return str.size();
 	}
-	//requirements are defined by provided tests
-	//       Test1.java, Test2.java, Test3.java, Test4.java
-
 }
 class Words {
 	String word;
