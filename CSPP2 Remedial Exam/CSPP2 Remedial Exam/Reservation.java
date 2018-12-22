@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 /*
   Reservation class, stores the person and room number in the Hotel
 */
@@ -41,52 +41,60 @@ public class Reservation {
         return this.name;
     }
 }
-class Hotel {
-    Reservation[] res;
-    int size;
-    Reservation resObj;
-    private int roomnumber = 1;
-    Hotel() {
-        res = new Reservation[5];
-        size = 0;
-    }
-    public void resize() {
-        res = Arrays.copyOf(res, 2 * res.length);
-    }
-    public int reserveRoom(String person) {
-        for (int i = 0; i <= size; i++) {
-            if (res[i] == null) {
-                resObj = new Reservation(person);
-                resObj.setName(person);
-                resObj.setRoom(roomnumber);
-                res[i] = resObj;
-                roomnumber++;
-                size++;
-                return roomnumber-1;
-            }
-        }
-        return -1;
-    }
-    public boolean reserveRoom(String person, int roomNum) {
-        if (res[roomNum - 1] == null) {
-            resObj = new Reservation(person, roomNum);
-            res[roomNum - 1] = resObj;
-            roomNum++;
-            size++;
-            return true;
-        }
-        return false;
+// class Hotel {
+//     private Reservation[] rooms;
+//     private int rnum = 1;
+//     private int size;
+//     Reservation reserveObj;
+//     Hotel() {
+//         rooms = new Reservation[5];
+//         for (int i=0; i<5 ;i++) {
+//             rooms[i] = null;
+//             size++;
+//         }
+//         // size = 0;
 
-    }
-    public void printReservations() {
-        String str = "";
-        for (int i = 0; i < size; i++) {
-            if (res[i] != null) {
-                System.out.println(res[i].getName() + " " +res[i].getRoom());
-                
-            }
-            else
-                System.out.println("Not reserved");
-        }
-    }
-}
+//     }
+    
+//     private int size() {
+//         return size;
+//     }
+//     // public void resize() {
+//     //     res = Arrays.copyOf(res, 2 * res.length);
+//     // }
+//     public int reserveRoom(String person) {
+//         for (int i = 0; i < size(); i++) {
+//             if (rooms[i] == null) {
+//                 reserveObj = new Reservation(person);
+//                 reserveObj.setRoom(rnum);
+//                 rooms[i] = reserveObj;
+//                 rnum++;
+//                 return rnum - 1;
+//             }
+//         }
+//         return -1;
+//     }
+//     public boolean reserveRoom(String person, int roomNum) {
+//         try {
+//             if (rooms[roomNum - 1] == null) {
+//                 reserveObj = new Reservation(person, roomNum);
+//                 rooms[roomNum  - 1] = reserveObj;
+//                 rnum++;
+//                 return true;
+//             }
+//         } catch (Exception vb) {
+//             return false;
+//         }
+//         return false;
+
+//     }
+//     public void printReservations() {
+//         for (int i = 0; i < size; i++) {
+//             if (rooms[i]!= null) {
+//                 System.out.println(rooms[i].getName() + " " + rooms[i].getRoom());
+//             } else {
+//                 System.out.println((i + 1) + " is not reserved");
+//             }
+//         }
+//     }
+// }
