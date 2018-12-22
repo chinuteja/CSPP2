@@ -75,7 +75,7 @@ kalyani 4
 kumar 5
 All Rooms are reserved
 All Rooms are reserved
-Already reserved
+Room is already reserved
 murthy 1
 kiran 2
 rajiv 3
@@ -101,12 +101,12 @@ swathi 5
 Your Output: 
 kiran 2
 murthy 1
-Already reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
 All Rooms are reserved
-Already reserved
+Room is already reserved
 murthy 1
 kiran 2
 kalyani 3
@@ -136,7 +136,7 @@ manasa 7
 Your Output: 
 kiran 2
 murthy 1
-Already reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
@@ -176,7 +176,7 @@ Your Output:
 kiran 2
 murthy 1
 kumar 3
-Already reserved
+Room is already reserved
 murthy 1
 kiran 2
 kumar 3
@@ -217,7 +217,7 @@ alekhya 6
 Your Output: 
 kiran 2
 murthy 1
-Already reserved
+Room is already reserved
 kalyani 3
 kumar 4
 swathi 5
@@ -274,7 +274,7 @@ manohar 8
 Your Output: 
 kiran 2
 murthy 1
-Already reserved
+Room is already reserved
 kalyani 3
 kumar 4
 kumar 5
