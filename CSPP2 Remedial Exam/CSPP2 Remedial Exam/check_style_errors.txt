@@ -20,13 +20,13 @@ Starting audit...
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:39: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:40: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:44:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:48: Line is longer than 80 characters (found 98). [LineLength]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:52:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:52:40: Parameter person should be final. [FinalParameters]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:53:46: ')' is preceded with whitespace. [ParenPad]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:60: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:62:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:62:35: Parameter num should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:49: Line is longer than 80 characters (found 98). [LineLength]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:53:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:53:40: Parameter person should be final. [FinalParameters]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:54:46: ')' is preceded with whitespace. [ParenPad]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:61: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:63:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:63:35: Parameter num should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...

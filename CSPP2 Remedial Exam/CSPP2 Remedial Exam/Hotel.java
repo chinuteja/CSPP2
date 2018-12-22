@@ -42,8 +42,9 @@ class Hotel {
 		return false;
 	}
 	public void printReservations() {
-
+        //System.out.println("jjkhljh");
 		for (int i = 0; i < size; i++) {
+			//System.out.println("i......."+i+"size........"+size);
 			if (rooms[i] != null) {
 				System.out.println(rooms[i].getName() + " " + rooms[i].getRoom());
 			}
@@ -66,11 +67,12 @@ class Hotel {
 		// System.out.println("Added"+ num + "more rooms");
 		// System.out.println("helllllllll");
 		rooms = Arrays.copyOf(rooms, size + num);
-
+        int j = size;
 		for (int i = 0; i < num; i++) {
-			rooms[size++] = null;
+			// System.out.println("lengh" +rooms.length);
+			rooms[j++] = null;
 		}
-		size = size + num;
+		// size = size + num;
 		return true;
 
 	}
