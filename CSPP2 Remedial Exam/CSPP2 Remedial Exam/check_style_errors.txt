@@ -15,8 +15,10 @@ Starting audit...
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:27:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:27:36: Parameter person should be final. [FinalParameters]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:27:51: Parameter roomNum should be final. [FinalParameters]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:34: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:35: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:30:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:37:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:39: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:38:40: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:44:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:48: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:52:9: Missing a Javadoc comment. [JavadocMethod]
@@ -25,7 +27,7 @@ Starting audit...
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:62:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Hotel.java:62:31: Parameter num should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 25 errors.
+Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Reservation.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\msit\CSPP2\CSPP2\CSPP2 Remedial Exam\CSPP2 Remedial Exam\Reservation.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]

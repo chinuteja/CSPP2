@@ -28,14 +28,14 @@ class Hotel {
 		if (size == rooms.length) {
 			System.out.println("All Rooms are reserved");
 		}
-		if (rooms[roomNum - 1] == null) {
+		else if (rooms[roomNum - 1] == null) {
 			reserveObj = new Reservation(person, roomNum);
 			rooms[roomNum  - 1] = reserveObj;
 			rnum++;
 			size++;
 			return true;
 		}
-		if (rooms[roomNum-1] != null) {
+		else if (rooms[roomNum-1] != null) {
 			System.out.println("Room is already reserved");
 		}
 
