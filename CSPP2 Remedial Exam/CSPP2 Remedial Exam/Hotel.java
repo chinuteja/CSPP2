@@ -35,6 +35,9 @@ class Hotel {
 			size++;
 			return true;
 		}
+		if (rooms[roomNum-1] != null) {
+			System.out.println("Room is already reserved");
+		}
 
 		return false;
 	}
