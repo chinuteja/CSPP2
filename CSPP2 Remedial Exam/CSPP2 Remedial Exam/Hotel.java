@@ -49,7 +49,7 @@ class Hotel {
 			}
 		}
 	}
-	public void cancelReservation(String person) {
+	public void cancelReservations(String person) {
 		for (int i = 0; i < size; i++ ) {
 			if (rooms[i] != null) {
 				if (rooms[i].getName().equals(person)) {
@@ -59,15 +59,17 @@ class Hotel {
 
 		}
 	}
-	public void buildRoom(int num) {
-		if (num < 0) {
-			return;
-		}
-		System.out.println("Added"+ num + "more rooms");
+	public boolean buildRooms(int num) {
+		// if (num < 0) {
+		// 	return;
+		// }
+		// System.out.println("Added"+ num + "more rooms");
+		// System.out.println("helllllllll");
 		rooms = Arrays.copyOf(rooms, size + num);
 		for (int i = 0; i < num; i++) {
 			rooms[size++] = null;
 		}
+		return true;
 
 	}
 }
