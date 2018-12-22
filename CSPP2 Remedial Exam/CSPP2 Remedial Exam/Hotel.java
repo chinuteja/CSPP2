@@ -63,6 +63,7 @@ class Hotel {
 		if (num < 0) {
 			return;
 		}
+		System.out.println("Added"+ num + "more rooms");
 		rooms = Arrays.copyOf(rooms, size + num);
 		for (int i = 0; i < num; i++) {
 			rooms[size++] = null;
