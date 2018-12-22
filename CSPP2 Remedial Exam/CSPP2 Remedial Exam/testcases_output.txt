@@ -139,15 +139,15 @@ kalyani 3
 kumar 4
 swathi 5
 Added 2 more rooms
-All Rooms are reserved
-All Rooms are reserved
-manasa 6
+alekhya 6
+manasa 7
 murthy 1
 kiran 2
 kalyani 3
 kumar 4
 swathi 5
-manasa 6
+alekhya 6
+manasa 7
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
 	at Hotel.printReservations(Hotel.java:47)
 	at Solution.main(Solution.java:52)
@@ -188,21 +188,19 @@ murthy 1
 kiran 2
 kumar 3
 Added 5 more rooms
-All Rooms are reserved
-All Rooms are reserved
+alekhya 6
 manasa 4
 kumar 5
-karthik 6
-manohar 7
-kumar 8
+karthik 7
+manohar 8
 murthy 1
 kiran 2
 kumar 3
 manasa 4
 kumar 5
-karthik 6
-manohar 7
-kumar 8
+alekhya 6
+karthik 7
+manohar 8
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Hotel.printReservations(Hotel.java:47)
 	at Solution.main(Solution.java:52)
@@ -255,16 +253,16 @@ kiran 2
 kalyani 3
 swathi 5
 Added 2 more rooms
-All Rooms are reserved
-All Rooms are reserved
+alekhya 6
 manasa 4
-kumar 6
+kumar 7
 murthy 1
 kiran 2
 kalyani 3
 manasa 4
 swathi 5
-kumar 6
+alekhya 6
+kumar 7
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
 	at Hotel.printReservations(Hotel.java:47)
 	at Solution.main(Solution.java:52)
@@ -321,23 +319,23 @@ murthy 1
 kiran 2
 kalyani 3
 Added 5 more rooms
-All Rooms are reserved
-All Rooms are reserved
+alekhya 6
 manasa 4
 kumar 5
-karthik 6
-manohar 7
-swetha 8
-reddy 9
+karthik 7
+manohar 8
+swetha 9
+reddy 10
 murthy 1
 kiran 2
 kalyani 3
 manasa 4
 kumar 5
-karthik 6
-manohar 7
-swetha 8
-reddy 9
+alekhya 6
+karthik 7
+manohar 8
+swetha 9
+reddy 10
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
 	at Hotel.printReservations(Hotel.java:47)
 	at Solution.main(Solution.java:52)

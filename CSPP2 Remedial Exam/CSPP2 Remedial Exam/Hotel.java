@@ -57,7 +57,7 @@ class Hotel {
 				}
 			}
 
-		}
+		} 
 	}
 	public boolean buildRooms(int num) {
 		// if (num < 0) {
@@ -66,9 +66,11 @@ class Hotel {
 		// System.out.println("Added"+ num + "more rooms");
 		// System.out.println("helllllllll");
 		rooms = Arrays.copyOf(rooms, size + num);
+
 		for (int i = 0; i < num; i++) {
 			rooms[size++] = null;
 		}
+		size = size + num;
 		return true;
 
 	}
