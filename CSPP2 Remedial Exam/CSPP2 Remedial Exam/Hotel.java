@@ -24,6 +24,9 @@ class Hotel {
 		return -1;
 	}
 	public boolean reserveRoom(String person, int roomNum) {
+		if (size == rooms.length) {
+			System.out.println("All Rooms are reserved");
+		}
 		if (rooms[roomNum - 1] == null) {
 			reserveObj = new Reservation(person, roomNum);
 			rooms[roomNum  - 1] = reserveObj;
