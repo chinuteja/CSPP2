@@ -32,6 +32,9 @@ class Hotel {
 		return false;
 	}
 	public void printReservations() {
+		if (size == rooms.length) {
+			System.out.println("All Rooms are reserved");
+		}
 		for (int i = 0; i < size; i++) {
 			if (rooms[i] != null) {
 				System.out.println(rooms[i].getName() + " " + rooms[i].getRoom());
